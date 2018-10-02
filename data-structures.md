@@ -19,7 +19,7 @@
   - weighted directed = one-way roads within a city, distance between nodes may vary
   - unweighted directed = web pages on the world wide web, each URL is a node that links from one page to another
   - unweighted undirected = social networks (Facebook), friendship goes both ways
-  
+
 
 - What makes a graph a simple graph? What attributes would make it not simple?
   - If a graph contains no multi-edges or self loops, it is a simple graph.
@@ -33,6 +33,9 @@
 
 
 - Describe the levels of connectivity a graph can have (strongly connected, weakly connected).
+  - Connected when a graph is undirected.
+  - Strongly connected when there is a path from any vertex to any other vertex (directed graph). One vertex has access to any other vertex through connected vertices.
+  - Weakly connected = when a directed graph that can be turned into a connected graph. Not all vertices have access to all other vertices.
 
 - What are cycles?
 
@@ -41,3 +44,6 @@
 
 - Dense = too many edges in a graph
 - Sparse = too few edges in a graph
+- Path(walk) = a sequence of vertices where each adjacent pair is connected by an edge.
+  - simple path = no vertices (and no edges) are repeated.
+  - trail = a walk in which no edges are repeated.
