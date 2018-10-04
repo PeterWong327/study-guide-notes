@@ -20,3 +20,16 @@
 
 - What benefits do we get from an Adjacency List?
  - Eliminates the redundancy of storing data on whether a node is connected to another node. Using an Adjacency List, one can deduce that a node is not connected to another node if there is no connection represented by the list. This consumes less memory than an Adjacency Matrix.
+
+
+ -  What are the steps for DFS on a graph?
+  1. Create a stack and start from the bottom and work way up.
+  2. Create a "visited" array to store results.
+  3. Start from lowest vertex in the graph.
+  4. Push the lowest vertex onto the stack.
+  5. Push onto the stack the lowest adjacent vertex that is not in the visited array. Add the vertex to visited.
+  6. Repeat step 5 for vertex at the top of the stack.
+  7. When there are no more adjacent un-visited vertices, pop off the vertex from the top of the stack and repeat step 5.
+  8. When stack is empty, traversal is complete.
+
+ -  What supporting data structure might you use for BFS and DFS, respectively?
