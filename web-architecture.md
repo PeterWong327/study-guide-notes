@@ -20,3 +20,16 @@
 
 
  - Walk through an arbitrary example of a RESTful request/response cycle, and describe what makes it RESTful
+
+
+ -  What happens when you type in www.google.com and hit enter?
+  - Browser checks the 4 caches for a Domain Name System (DNS) record to find corresponding IP address of URL:   
+      - **browser cache** for a repository of DNS records for websites previously visited.
+      - **OS cache**, browser checks the computer OS
+      - **router cache** if not found in computer
+      - **ISP cache**, checks the ISP's own DNS server
+  - If the requested URL is not in the cache, a DNS query is initiated to find the IP address of the server that hosts the URL.
+  - The browser initiates a TCP (type of internet protocol) connection with the server.
+  - The browser sends an HTTP request (GET, POST, etc) to the web server.
+  - The server handles the request and sends back a response (JSON, XML, HTML)
+  - The browser displays the HTML content

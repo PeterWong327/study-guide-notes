@@ -34,8 +34,8 @@
 
 
  -  What supporting data structure might you use for BFS and DFS, respectively?
-  - DFS: use a stack to track current vertex/node.
-  - BFS: use a queue to track current vertex/node.
+  - DFS: use a stack to track the path between current vertex and start vertex.
+  - BFS: use a queue to track path between current vertex and start vertex.
 
 
  - Steps for BFS on a graph:
