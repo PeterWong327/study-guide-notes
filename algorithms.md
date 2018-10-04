@@ -32,4 +32,13 @@
   7. When there are no more adjacent un-visited vertices, pop off the vertex from the top of the stack and repeat step 5.
   8. When stack is empty, traversal is complete.
 
+
  -  What supporting data structure might you use for BFS and DFS, respectively?
+ 
+
+ - Steps for BFS on a graph:
+   1. Create a queue and a "visited" array to store the results.
+   2. Start from lowest vertex in graph.
+   3. Add lowest un-visited adjacent vertex to queue, and add it to "visited".
+   4. Repeat Step 3 for the same vertex until no more adjacent vertices.
+   5. Move on to next vertex by dequeueing the head of the queue, and repeat Step 3-5, until queue is empty. Traversal complete.
