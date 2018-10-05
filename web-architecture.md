@@ -33,3 +33,7 @@
   - The browser sends an HTTP request (GET, POST, etc) to the web server.
   - The server handles the request and sends back a response (JSON, XML, HTML)
   - The browser displays the HTML content
+
+
+  - Why do we need a DNS?
+    - A DNS is like a phonebook of website addresses that matches domain names to the IP address (made up of numbers) of the website. When a user searches for a URL, the website domain name is sent to the DNS to ultimately retrieve the IP address of the website. The browser then sends a request to the website using the IP address.
