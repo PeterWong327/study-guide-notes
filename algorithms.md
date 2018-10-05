@@ -38,7 +38,7 @@
   - BFS: use a queue to track path between current vertex and start vertex.
 
 
- - Steps for BFS on a graph:
+ - What are the steps for BFS on a graph?
    1. Create a queue and a "visited" array to store the results.
    2. Start from lowest vertex in graph.
    3. Add lowest un-visited adjacent vertex to queue, and add it to "visited".
