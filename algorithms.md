@@ -62,12 +62,20 @@
 
 
 -  Explain the steps of Djikstra shortest-path algorithm.
-  1. Create a min heap and initialize all the vertices with infinite distance from source vertex.
+  1. Create a min heap and add all the vertices with infinite distance from source vertex.
   2. Set distance of source vertex to 0.
-  3. Put the source vertex in a 'distance' hash map, used to store distances from root to every vertex.
-  4. Set parent for source vertex to null, using a 'parent' hash map that stores parent of every vertex in shortest distance.
-  5. Iterate until heap is empty:
-    a.
+  3. Put the source vertex in a 'distance' hash map, used to **store shortest distances** from root to every vertex.
+  4. Set parent for source vertex equal to null, using a 'parent' hash map that **stores parent** of every vertex in shortest distance.
+  5. Iterate while heap is not empty:
+    a. Extract the minimum value vertex from the min heap. Use the extracted heap node to get the current vertex and update the distance hash map.
+
+    b. Iterate through all the neighbors of the current vertex and check if the adjacent vertex is present in the min heap. If not present, then the shortest distance for the adjacent vertex already exists.
+
+    c. If present, find the total distance (newDistance) from source vertex to the adjacent vertex.
+
+    d. Check if the adjacent vertex distance in the min heap is greater than the newDistance. If so, decrease the value in the min heap to this new distance. Update the parent of the adjacent vertex to current vertex.
+
+    e. Repeat until all neighbors have been explored, and then repeat step A.
 
 - What is the time complexity of Djikstra's algorithm?
   O(E*log(V)), where E is the # of edges and V is the # of vertices.
