@@ -37,7 +37,12 @@ What is mobile-first design? Be as specific as possible.
   - componentWillReceiveProps
   - componentDidUpdate
 
+
 -  In which lifecycle methods can you call setState?
   - componentDidMount
   - componentWillReceiveProps
   - componentDidUpdate
+
+
+- Give one explanation for why we have to make AJAX requests in componentDidMount.
+  - An AJAX request might resolve before the component mounts, which would mean that setState would be called on an unmounted component. Making AJAX requests in componentDidMount would mean that there is always a component to update.

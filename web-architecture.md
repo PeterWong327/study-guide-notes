@@ -35,5 +35,8 @@
   - The browser displays the HTML content
 
 
-  - Why do we need a DNS?
+- Why do we need a DNS?
     - A DNS is like a phonebook of website addresses that matches domain names to the IP address (made up of numbers) of the website. When a user searches for a URL, the website domain name is sent to the DNS to ultimately retrieve the IP address of the website. The browser then sends a request to the website using the IP address.
+
+- Explain TCP, and why it is a necessary protocol
+  - (Transmission Control Protocol) It manages the sending and receiving of all your data as packets. When packets arrive, TCP checks and sends back acknowledgement of each packet received. If all packets required have been received, TCP sends signal for receipt of all packets in order to proceed with the loading of a webpage.

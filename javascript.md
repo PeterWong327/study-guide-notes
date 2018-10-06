@@ -18,6 +18,7 @@ parseInt("123.8") = 123 (Rounds down)
 - What happens when we do or don't explicitly set an object's prototype?
 
 - What is an object's default prototype?
+  - An object with the only property 'constructor' that points back to the function itself.
 
 - What are the valid values for an object's prototype?
 
@@ -44,3 +45,16 @@ parseInt("123.8") = 123 (Rounds down)
 
 - What is data encapsulation?
   - Data encapsulation is the idea that data within a function cannot be directly accessed, except through a closure.
+
+
+-   What is the difference between the memory heap and call stack in javascript?
+
+
+-  What is one problem with programming languages that a fully single-threaded?
+
+
+- When is using an IIFE necessary?
+  Immediate Invoked Function Expression (IIFE) is used when you want to create a new variable scope to attach private data to a function. It is a function expression that is called immediately after it is defined.
+
+- What is the syntax for an IIFE?
+  - The function is surrounded with parentheses to prevent it from being treated as a function declaration. Final parentheses are placed after the function to execute the function expression.
