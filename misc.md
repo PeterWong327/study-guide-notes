@@ -1,7 +1,19 @@
 Name 5 benefits of HTML5
+  1. Audio and video support through <audio> <video> tags.
+  2. Using <!DOCTYPE html> to declare the doctype.
+  3. Using semantic code (ex: <nav>) to write cleaner code.
+  4. Ability to use <canvas> to create more interactive and animated websites (games).
+  5. Ability to create mobile sites and apps.
+
 What is localStorage? How might you use it?
+  - LocalStorage allows you to store user information, cache data, and load the user's previous application state, all through the user's browser locally. LocalStorage can be used to store the current state of a game, or to speed up web service use and avoid exceeding the quota.
+
+
 Why are media queries useful?
+
+
 What is mobile-first design? Be as specific as possible.
+  - It is when CSS properties and styles are set to change when the screen width gets larger than a mobile size. This is done by using media queries to conditionally change the CSS properties when the screen width is larger than the mobile screen property.
 
 
 - Give a high level overview of how CSS grids work.
