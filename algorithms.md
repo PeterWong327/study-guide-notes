@@ -49,10 +49,10 @@
   - Topological Sort can be used to order the packages of a build system. The child node of a vertex would have a dependency on its parent node, so a parent node is always ordered before a child node in a topological sort.
 
  - What is a difference between Topological Sort and DFS?
-  - Topological sort traverses a graph only as far as a child node needs from its dependencies on its parent nodes, while DFS traverses through a graph until there are no more child nodes before traversing back up to the parent node.
+  - Topological sort traverses a graph only as far as a child node needs from its dependencies on its parent nodes, while DFS traverses through a graph until there are no more child nodes before traversing back up to the parent node. There can be more than one way to topologically sort a graph, while there is only one way to perform a DFS traversal for a graph.
 
  - On which types of Graphs can we do a topological sort?
-  - On directed acyclic graphs.
+  - On directed acyclic graphs(DAG).
 
  - What data structure do we use to assist with the topological sort algorithm?
-  - Stacks and sets. A set would be used to store all the visited vertices, while a stack has all the vertices in topological sorted order.
+  - Stacks and sets. A set would be used to store all the visited vertices, while a stack has all the vertices in topological sorted order (pushed from the set when it has no more adjacent vertices).
