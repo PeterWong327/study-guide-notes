@@ -45,14 +45,29 @@
    4. Repeat Step 3 for the same vertex until no more adjacent vertices.
    5. Move on to next vertex by dequeueing the head of the queue, and repeat Step 3-5, until queue is empty. Traversal complete.
 
+
  - Give an example of a use-case for Topological Sort
   - Topological Sort can be used to order the packages of a build system. The child node of a vertex would have a dependency on its parent node, so a parent node is always ordered before a child node in a topological sort.
 
+
  - What is a difference between Topological Sort and DFS?
-  - Topological sort traverses a graph only as far as a child node needs from its dependencies on its parent nodes, while DFS traverses through a graph until there are no more child nodes before traversing back up to the parent node. There can be more than one way to topologically sort a graph, while there is only one way to perform a DFS traversal for a graph.
+    - Topological sort traverses a graph only as far as a child node needs from its dependencies on its parent nodes, while DFS traverses through a graph until there are no more child nodes before traversing back up to the parent node. There can be more than one way to topologically sort a graph, while there is only one way to perform a DFS traversal for a graph.
+
 
  - On which types of Graphs can we do a topological sort?
-  - On directed acyclic graphs(DAG).
+    - On directed acyclic graphs(DAG).
 
- - What data structure do we use to assist with the topological sort algorithm?
-  - Stacks and sets. A set would be used to store all the visited vertices, while a stack has all the vertices in topological sorted order (pushed from the set when it has no more adjacent vertices).
+- What data structure do we use to assist with the topological sort algorithm?
+    - Stacks and sets. A set would be used to store all the visited vertices, while a stack has all the vertices in topological sorted order (pushed from the set when it has no more adjacent vertices).
+
+
+-  Explain the steps of Djikstra shortest-path algorithm.
+  1. Create a min heap and initialize all the vertices with infinite distance from source vertex.
+  2. Set distance of source vertex to 0.
+  3. Put the source vertex in a 'distance' hash map, used to store distances from root to every vertex.
+  4. Set parent for source vertex to null, using a 'parent' hash map that stores parent of every vertex in shortest distance.
+  5. Iterate until heap is empty:
+    a.
+
+- What is the time complexity of Djikstra's algorithm?
+  O(E*log(V)), where E is the # of edges and V is the # of vertices.
