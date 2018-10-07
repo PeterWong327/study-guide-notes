@@ -10,7 +10,7 @@ What is localStorage? How might you use it?
 
 
 Why are media queries useful?
-
+  - Media queries are useful to make a webpage responsive, depending on the screen size. We can use media queries to add a breakpoint to define what CSS properties to display when the browser window gets smaller or larger than a defined breakpoint (ex: max-width: 768px).
 
 What is mobile-first design? Be as specific as possible.
   - It is when CSS properties and styles are set to change when the screen width gets larger than a mobile size. This is done by using media queries to conditionally change the CSS properties when the screen width is larger than the mobile screen property.
