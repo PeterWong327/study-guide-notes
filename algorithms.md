@@ -46,6 +46,13 @@
    5. Move on to next vertex by dequeueing the head of the queue, and repeat Step 3-5, until queue is empty. Traversal complete.
 
 
+- Explain the steps of topological sort.
+  1. Initialize a set and a stack.
+  2. Pick any vertex and add it to the set ('visited') if not visited already. Check all children of vertex and place each child into visited.
+  3. Explore all children of each visited vertex. Once done exploring, push the visited vertex into the stack, and move up to each parent, pushing each parent if there are no more children to explore.
+  4. Repeat step 2 for another vertex until all vertices have been visited.
+  5. Pop off each vertex from the stack into a an array, which is sorted.
+
  - Give an example of a use-case for Topological Sort
   - Topological Sort can be used to order the packages of a build system. The child node of a vertex would have a dependency on its parent node, so a parent node is always ordered before a child node in a topological sort.
 

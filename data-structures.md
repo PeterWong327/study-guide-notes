@@ -38,8 +38,10 @@
   - Weakly connected = when a directed graph that can be turned into a connected graph. Not all vertices have access to all other vertices.
 
 - What are cycles?
+  - Cycles are paths in a graph where a vertex can be reached from itself as an origin.
 
 - What are some naive ways we can store and traverse graphs? Be able to discuss time/space complexity of these approaches, and what issues we may face.
+  - We can store the vertices and edges of a graph in two lists. The space complexity would be Big O of the number of vertices plus the number of edges. The time complexity would be Big O of the number of edges. An issue is that the number of edges can be almost as much as vertices squared, so that can be very costly in terms of time.
 
 
 - Dense = too many edges in a graph

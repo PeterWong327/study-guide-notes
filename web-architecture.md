@@ -11,7 +11,6 @@
    3. **Uniform interface**: ensures that there is a common language between servers and clients. 4 sub- constraints.
 
 
-
  - What sub-constraints make up a Uniform Interface
    - identification of resources
    - manipulation of resources through representations
@@ -20,6 +19,7 @@
 
 
  - Walk through an arbitrary example of a RESTful request/response cycle, and describe what makes it RESTful
+  - When a user types a URL in the browser and presses enter, the browser sends a HTTP GET request to the server. The server would send back a response with information on how to interpret the message body, so that the client has everything it needs in the single message. This is RESTful because the uniform interface constraint ensure that there is a common language between servers and clients.
 
 
  -  What happens when you type in www.google.com and hit enter?
@@ -35,6 +35,9 @@
   - The browser displays the HTML content
 
 
+- How does DNS work?
+  Refer to "Why do we need a DNS".
+
 - Why do we need a DNS?
     - A DNS is like a phonebook of website addresses that matches domain names to the IP address (made up of numbers) of the website. When a user searches for a URL, the website domain name is sent to the DNS to ultimately retrieve the IP address of the website. The browser then sends a request to the website using the IP address.
 
@@ -47,5 +50,5 @@
 
 - What are the benefits of UDP (User Datagram Protocol) over TCP (Transmission Control Protocol)? What are the shortcomings?
 
-  - Benefits: UDP contains smaller packet sizes (header: 8 bytes compared to 20 bytes), does not need to create a connection to send out data, and has more control over when data is sent out. So data can be sent faster. 
+  - Benefits: UDP contains smaller packet sizes (header: 8 bytes compared to 20 bytes), does not need to create a connection to send out data, and has more control over when data is sent out. So data can be sent faster.
   - Shortcomings: UDP has primitive error detection. It will not try to recover from a data corruption. It also does not compensate for lost packets. It does not guarantee packets arrive in order. It does not have congestion control, so a busy network will not stop UDP from sending packets still.

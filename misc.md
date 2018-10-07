@@ -44,5 +44,21 @@ What is mobile-first design? Be as specific as possible.
   - componentDidUpdate
 
 
+- What lifecycle methods get called in the mounting phase? What are the use cases for each of those methods?
+  - componentWillMount: app configuration in the root component, connecting to external APIs.
+  - componentDidMount: start AJAX calls to load in data for component.
+
+
+- What lifecycle methods get called in the update phase? What are the use cases for each of those methods? What method gets called in the unmounting phase?
+  - Update:
+    - componentWillReceiveProps: trigger state changes when a prop changes.
+    - shouldComponentUpdate: controls when component will re-render, using a boolean.
+    - componentWillUpdate: used instead of componentWillReceiveProps, in conjunction with shouldComponentUpdate.
+    - componentDidUpdate: updates the DOM when a prop/state changes.
+  - Unmounting:
+    - componentWillUnmount: used to call any actions required after a component unmounts.
+
+
+
 - Give one explanation for why we have to make AJAX requests in componentDidMount.
   - An AJAX request might resolve before the component mounts, which would mean that setState would be called on an unmounted component. Making AJAX requests in componentDidMount would mean that there is always a component to update.
