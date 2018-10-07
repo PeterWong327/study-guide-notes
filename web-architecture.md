@@ -40,3 +40,12 @@
 
 - Explain TCP, and why it is a necessary protocol
   - (Transmission Control Protocol) It manages the sending and receiving of all your data as packets. When packets arrive, TCP checks and sends back acknowledgement of each packet received. If all packets required have been received, TCP sends signal for receipt of all packets in order to proceed with the loading of a webpage.
+
+
+-  What is a datagram?
+  - A datagram is a short message sent by UDP. It consists of a header and a data payload. The header contains the routing information from the origin to the destination. The payload is the data to be transported.
+
+- What are the benefits of UDP (User Datagram Protocol) over TCP (Transmission Control Protocol)? What are the shortcomings?
+
+  - Benefits: UDP contains smaller packet sizes (header: 8 bytes compared to 20 bytes), does not need to create a connection to send out data, and has more control over when data is sent out. So data can be sent faster. 
+  - Shortcomings: UDP has primitive error detection. It will not try to recover from a data corruption. It also does not compensate for lost packets. It does not guarantee packets arrive in order. It does not have congestion control, so a busy network will not stop UDP from sending packets still.
