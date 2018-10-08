@@ -52,3 +52,10 @@
 
   - Benefits: UDP contains smaller packet sizes (header: 8 bytes compared to 20 bytes), does not need to create a connection to send out data, and has more control over when data is sent out. So data can be sent faster.
   - Shortcomings: UDP has primitive error detection. It will not try to recover from a data corruption. It also does not compensate for lost packets. It does not guarantee packets arrive in order. It does not have congestion control, so a busy network will not stop UDP from sending packets still.
+
+
+-  What are the common HTTP methods? When are they used, and what do they accomplish? (This is a big one)
+  - GET:
+  - POST:
+  - PUT:
+  - DELETE:

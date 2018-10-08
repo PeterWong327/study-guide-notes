@@ -86,3 +86,14 @@
 
 - What is the time complexity of Djikstra's algorithm?
   O(E*log(V)), where E is the # of edges and V is the # of vertices.
+
+
+-  What is a base case in recursion? Why do we need one? Do we always need one?
+  - A base case is a condition that stops a function from calling itself recursively in an infinite loop. We need the base case to prevent Stack Overflow.
+
+- What exactly is a Stack Overflow?
+  - Stack Overflow is a function is repeatedly called recursively and never reaches a base case to stop the recursive call. This will result in too many function calls on the stack, resulting in memory exhaustion.
+
+- Describe direct and indirect recursion
+  - Direct recursion is when a function calls itself.
+  - Indirect recursion is when a function1 calls another function2, which calls the original function1 directly or indirectly.
