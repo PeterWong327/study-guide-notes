@@ -84,4 +84,4 @@ parseInt("123.8") = 123 (Rounds down)
 
 
 - What's the event loop? How does it work?
-  - The event loop is a queue of callback functions. When an asynchronous function executes, the callback function is pushed into the queue. Once the code after an asynchronous function has executed (the  call stack has cleared), the callback functions in the event loop gets processed.
+  - The event loop is a queue of callback functions. When an asynchronous function executes, the callback function is pushed into the queue. Once the code after an asynchronous function has executed (the call stack has cleared), the callback functions in the event loop gets processed.
