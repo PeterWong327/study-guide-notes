@@ -85,3 +85,10 @@ parseInt("123.8") = 123 (Rounds down)
 
 - What's the event loop? How does it work?
   - The event loop is a queue of callback functions. When an asynchronous function executes, the callback function is pushed into the queue. Once the code after an asynchronous function has executed (the call stack has cleared), the callback functions in the event loop gets processed.
+
+- In which phase does hoisting occur?
+  - Hoisting occurs during function declarations.
+
+
+- What is the difference between function hoisting and variable hoisting?
+  - Function hoisting means that a declared function can be called before it is defined, while variable hoisting only applies to the declaration of the variable (using var), but the its assignments are not affected.
