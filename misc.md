@@ -62,3 +62,20 @@ What is mobile-first design? Be as specific as possible.
 
 - Give one explanation for why we have to make AJAX requests in componentDidMount.
   - An AJAX request might resolve before the component mounts, which would mean that setState would be called on an unmounted component. Making AJAX requests in componentDidMount would mean that there is always a component to update.
+
+
+-  What is a state tree in the context of Redux?
+  - A state tree is a JavaScript object that represents everything that can change in an application, including the data and the UI state.
+
+
+-  Why don't we want to modify (i.e. mutate) our redux state?
+  - We want to keep the state tree as read only, and to make any changes by dispatching an action, which is a plain JavaScript object. This helps to speed up the rendering of the application.
+
+
+- What is a pure function? Impure function?
+  - A pure function is a function whose returned value depends on the values of its arguments. It does not modify the values that are passed to it.
+  - An impure function is a function that may call the database or network, operate on the DOM, or override the values that are passed to it.
+
+
+- Describe in detail what a redux reducer is. What makes it a pure function?
+  - A redux reducer is a function that calculates the next state tree based on the previous state tree and the action being dispatched. It is a pure function because it does not modify the state given to it, and it has to return a new object.

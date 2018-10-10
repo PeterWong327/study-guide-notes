@@ -55,7 +55,10 @@
 
 
 -  What are the common HTTP methods? When are they used, and what do they accomplish? (This is a big one)
-  - GET:
-  - POST:
-  - PUT:
-  - DELETE:
+  - GET: retrieves data from a web server by specifying parameters in the URL.
+  - POST: sends data to the server, such as form data, which results in a response from the server.
+  - PUT: requests the server to store the included entity-body at a location specified by the given URL.
+  - DELETE: requests the server to delete a file at a location specified by the given URL.
+  - CONNECT: establishes a network connection to a web server over HTTP.
+  - OPTIONS: used to identify the HTTP methods and other options supported by a web server.
+  - TRACE: used to echo the contents of an HTTP request back to the requester, for used in debugging at the development phase.
