@@ -107,3 +107,4 @@
   - The disadvantages include the possibility of stack overflow if the function is not set up properly, and the function can become memory intensive as as the stack frame increases. Also, recursion has greater time requirements because of additional function calls.
 
 - How is memory allocated during recursive function calls?
+  - During a recursive call, memory is allocated on the stack to the main function making the recursive call. As another recursive call occurs, memory is allocated on top of the memory allocated to calling the function. Once a base case is reached, the function return its value to the function which called it, de-allocating the memory until the stack is cleared.

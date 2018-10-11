@@ -92,3 +92,11 @@ parseInt("123.8") = 123 (Rounds down)
 
 - What is the difference between function hoisting and variable hoisting?
   - Function hoisting means that a declared function can be called before it is defined, while variable hoisting only applies to the declaration of the variable (using var), but its assignments are not affected.
+
+
+- What does the 'new' keyword do in Javascript?
+  - The 'new' keyword creates a new object through a constructor function. The object's prototype is set as the prototype of the constructor function. It also executes the constructor function with 'this' as the newly created object and returns the created object.
+
+
+- What type of function is invoked with the 'new' keyword? What does this function return?
+  - A constructor function is invoked with the 'new' keyword. This function returns the object that is created.
