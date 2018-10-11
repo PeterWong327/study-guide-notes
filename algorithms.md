@@ -103,7 +103,7 @@
   - Tail call recursion is when a function ends with a recursive call, so that the last thing executed is the recursive call. It is helpful because the function can be optimized by the compiler. Since the recursive call is the last to be executed, there would be no need to save the current function's stack frame, thus saving memory.
 
 - Discuss advantages/disadvantages of recursion
-
-
+  - The advantages of recursion include being able to easily solve a complex problem using a recursive function, resulting in clean and simple code.
+  - The disadvantages include the possibility of stack overflow if the function is not set up properly, and the function can become memory intensive as as the stack frame increases. Also, recursion has greater time requirements because of additional function calls.
 
 - How is memory allocated during recursive function calls?
