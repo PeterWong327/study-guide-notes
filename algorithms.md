@@ -108,3 +108,12 @@
 
 - How is memory allocated during recursive function calls?
   - During a recursive call, memory is allocated on the stack to the main function making the recursive call. As another recursive call occurs, memory is allocated on top of the memory allocated to calling the function. Once a base case is reached, the function return its value to the function which called it, de-allocating the memory until the stack is cleared.
+
+
+-  What is the difference between Memoization and Tabulation?
+  - Memoization is a top-down approach in dynamic programming in which the values of a problem can be stored as the result and reused to solve the rest of the problem (until the base case).
+  - Tabulation is a bottom-up approach in which the value of a problem starts at the base case and is used to build up to the top (result of the problem).
+
+
+- Why is memoization helpful?
+  -Memoization is helpful because it avoids the running of duplicated code by storing the values of previously run code, to be used again in the same function.
