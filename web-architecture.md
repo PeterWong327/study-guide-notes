@@ -62,3 +62,20 @@
   - CONNECT: establishes a network connection to a web server over HTTP.
   - OPTIONS: used to identify the HTTP methods and other options supported by a web server.
   - TRACE: used to echo the contents of an HTTP request back to the requester, for used in debugging at the development phase.
+
+
+- Top 10 HTTP Status Codes:
+  - 2xx = Success
+    - 200 = OK
+    - 201 = Created
+    - 204 = No Content
+  - 3xx = Redirection (additional action needed to complete the request)
+    - 304 = Not Modified
+  - 4xx = Client Error
+    - 400 = Bad Request
+    - 401 = Unauthorized
+    - 403 = Forbidden
+    - 404 = Not Found
+    - 409 = Conflict
+  - 5xx = Server Error
+    - 500 = Internal Server Error (Generic server-side error)
