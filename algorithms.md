@@ -97,3 +97,13 @@
 - Describe direct and indirect recursion
   - Direct recursion is when a function calls itself.
   - Indirect recursion is when a function1 calls another function2, which calls the original function1 directly or indirectly.
+
+
+- What is tail call recursion? Why is it helpful, if at all?
+  - Tail call recursion is when a function ends with a recursive call, so that the last thing executed is the recursive call. It is helpful because the function can be optimized by the compiler. Since the recursive call is the last to be executed, there would be no need to save the current function's stack frame, thus saving memory.
+
+- Discuss advantages/disadvantages of recursion
+
+
+
+- How is memory allocated during recursive function calls?
