@@ -112,7 +112,7 @@
 
 -  What is the difference between Memoization and Tabulation?
   - Memoization is a top-down approach in dynamic programming in which the values of a problem can be stored as the result and reused to solve the rest of the problem (until the base case).
-  - Tabulation is a bottom-up approach in which the value of a problem starts at the base case and is used to build up to the top (result of the problem).
+  - Tabulation is a bottom-up approach in which the value of a problem starts at the base case and is used to build up (iteratively) to the top (result of the problem).
 
 
 - Why is memoization helpful?
