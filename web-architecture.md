@@ -64,7 +64,7 @@
   - TRACE: used to echo the contents of an HTTP request back to the requester, for used in debugging at the development phase.
 
 
-- Top 10 HTTP Status Codes:
+- **Top 10 HTTP Status Codes:**
   - 2xx = Success
     - 200 = OK
     - 201 = Created
@@ -79,3 +79,10 @@
     - 409 = Conflict
   - 5xx = Server Error
     - 500 = Internal Server Error (Generic server-side error)
+
+
+- **Man in the Middle Attack**
+  - When a middle party (Mallory) intercepts a message (with encryption key) sent from Alice to Bob. This allows the middle party to read or change the message before and after the message is encrypted.
+
+
+- What is the difference between HTTP and HTTPS?
