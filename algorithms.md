@@ -117,3 +117,7 @@
 
 - Why is memoization helpful?
   -Memoization is helpful because it avoids the running of duplicated code by storing the values of previously run code, to be used again in the same function.
+
+
+-  What is an optimal substructure? When might a problem have one?
+  - An optimal substructure is when a problem has an optimal solution that can be obtained by using optimal solutions of its subproblems. A problem has an optimal substructure when it has subproblems that can be solved and the results can be used to solve the original problem.
