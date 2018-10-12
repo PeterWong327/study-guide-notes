@@ -86,15 +86,16 @@
 
 
 - What is the difference between HTTP and HTTPS?
-  - HTTP works by sending data that is not encrypted, which means that a third party can intercept and modify the data. HTTPS sends data through Certification Authorities by encrypting messages using symmetric cryptography (Caesar Cipher). The key used to encrypt the message is chosen by asymmetric cryptography. 
+  - HTTP works by sending data that is not encrypted, which means that a third party can intercept and modify the data. HTTPS sends data through Certification Authorities by encrypting messages using symmetric cryptography (Caesar Cipher). The key used to encrypt the message is chosen by asymmetric cryptography.
 
 
 -  What is the difference between localStorage and sessionStorage?
-  - sessionStorage data is only available for the duration of the browser session, so the data would be deleted when the tab or window is closed.
+  - sessionStorage data is only available for the duration of the browser session, so the data would be deleted when the tab or window is closed (not persistent).
   - localStorage data is available in an ongoing basis, but can be cleared by the user.
 
 
 - Why is it important that users cannot modify their cookies?
-
+  - Users cannot modify their cookies because cookies are used for authentication purposes and persistence of user data. If the cookies are modified, then users may be able to access other users' data and functionality on a web application. This is to prevent sensitive data from being accessed by other users.
 
 - When are cookies sent to the server?
+  - Cookies for a page are sent from the browser to the server for every request to the same domain (original page request, ajax requests, images, stylesheets, scripts, and fonts).
