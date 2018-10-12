@@ -112,3 +112,6 @@ parseInt("123.8") = 123 (Rounds down)
 
 - What does stopImmediatePropagation do?
   - stopImmediatePropagation stops event bubbling AND prevent handlers on the current element from running. No other handlers would execute.
+
+- What is event delegation?
+  - Event delegation utilizes event bubbling to apply a single handler to multiple elements through the common ancestor (using onclick on the common ancestor).
