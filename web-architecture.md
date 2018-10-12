@@ -86,3 +86,4 @@
 
 
 - What is the difference between HTTP and HTTPS?
+  - HTTP works by sending data that is not encrypted, which means that a third party can intercept and modify the data. HTTPS sends data through Certification Authorities by encrypting messages using symmetric cryptography (Caesar Cipher). The key used to encrypt the message is chosen by asymmetric cryptography. 
