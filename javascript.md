@@ -100,3 +100,15 @@ parseInt("123.8") = 123 (Rounds down)
 
 - What type of function is invoked with the 'new' keyword? What does this function return?
   - A constructor function is invoked with the 'new' keyword. This function returns the object that is created.
+
+
+- How can you stop event bubbling?
+  - You can stop event bubbling by using event.stopPropagation(). This is placed as an onclick on a target element.
+
+- What is the difference between event.target and event.currentTarget?
+  - event.target is the most deeply nested element that caused the event. It is the target element that initiated the event (the element that was actually clicked)
+  - event.currentTarget is the element that has a currently running handler on it. It refers to 'this'.
+
+
+- What does stopImmediatePropagation do?
+  - stopImmediatePropagation stops event bubbling AND prevent handlers on the current element from running. No other handlers would execute.
