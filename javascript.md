@@ -115,3 +115,10 @@ parseInt("123.8") = 123 (Rounds down)
 
 - What is event delegation?
   - Event delegation utilizes event bubbling to apply a single handler to multiple elements through the common ancestor (using onclick on the common ancestor).
+
+
+-  Discuss 4 differences between ES5 and ES6 that you find important.
+  - ES6 does not allow duplicate declaration of variables when declared using 'let' or 'const' in the same scope.
+  - ES6 uses lexical 'this' via fat arrow function, which forces 'this' to always point to the object where it is physically located within. In ES5, 'this' refers to the window if it isn't binded to the object.
+  - ES6 has 'Rest' parameters (...args), where the parameters is an array, so we can use all the Array functions. In ES5, 'arguments' acts like an array but the Array functions (sort, slice) are not available.
+  - Strict Mode ('use strict') is optional in ES5, but required in many ES6 features. This helps to explicitly show what the errors are.
