@@ -99,3 +99,6 @@
 
 - When are cookies sent to the server?
   - Cookies for a page are sent from the browser to the server for every request to the same domain (original page request, ajax requests, images, stylesheets, scripts, and fonts).
+
+-  What is the danger of an XSS?
+  - Cross-site Scripting (XSS) is dangerous because an attacker can manipulate a web application that utilizes user input to insert a string that will be used within a web page and treated as code by the victim's browser. Once this is done, an attacker can gain access to a user's cookies, location, webcam, microphone, and their files. 
