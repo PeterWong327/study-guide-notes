@@ -86,3 +86,7 @@ What is mobile-first design? Be as specific as possible.
 
 - What does the subscribe method do in Redux?
   - The subscribe method lets you register a callback that the Redux store will call any time an action has been dispatched.
+
+
+- What are presentational components?
+  - Presentational components are components that do not specify any behaviors. They are only concerned with how things render or look.
