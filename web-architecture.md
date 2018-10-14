@@ -104,11 +104,11 @@
 
 
 - What is the danger of an XSS?
-  - Cross-site Scripting (XSS) is dangerous because an attacker can manipulate a web application that utilizes user input to insert a string that will be used within a web page and treated as code by the victim's browser. Once this is done, an attacker can gain access to a user's cookies, location, webcam, microphone, and their files. 
+  - Cross-site Scripting (XSS) is dangerous because an attacker can manipulate a web application that utilizes user input to insert a string that will be used within a web page and treated as code by the victim's browser. Once this is done, an attacker can gain access to a user's cookies, location, webcam, microphone, and their files.
 
 
 - What is a CSRF Attack?
-  -
+  - a Cross-site Request Forgery Attack is when an attacker tricks a victim into performing actions on behalf of the attacker. This is done by having the victim click a link or load a page. Then the attacker sends a request through the victim's browser to a targeted web application, using information from the victim such as Cookies. The web application recognizes the information and thus would allow HTTP requests sent by the attacker on the victim's behalf.
 
 
 - How can you prevent CSRF Vulnerabilities?
