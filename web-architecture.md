@@ -112,3 +112,4 @@
 
 
 - How can you prevent CSRF Vulnerabilities?
+  - To prevent CSRF vulnerabilities, one way is to use a CSRF Token that is associated with a particular user and can be found as a hidden value in every state changing form. This token should be invalidated after a period of time and after the user logs out of an application. Another way is to use same-site Cookies, which can only be sent if the request is made from the same origin that is related to the Cookie being sent.
