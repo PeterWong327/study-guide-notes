@@ -80,6 +80,7 @@ What is mobile-first design? Be as specific as possible.
 - Describe in detail what a redux reducer is. What makes it a pure function?
   - A redux reducer is a function that calculates the next state tree based on the previous state tree and the action being dispatched. It is a pure function because it does not modify the state given to it, and it has to return a new object.
 
+
 - What is the role of the store in Redux?
   - The store binds together the three principles of Redux. It holds the current application's state object (store.getState), it dispatches actions, and it contains the reducer that tells how state is updated with actions.
 

@@ -92,7 +92,7 @@
   - A base case is a condition that stops a function from calling itself recursively in an infinite loop. We need the base case to prevent Stack Overflow.
 
 - What exactly is a Stack Overflow?
-  - Stack Overflow is a function is repeatedly called recursively and never reaches a base case to stop the recursive call. This will result in too many function calls on the stack, resulting in memory exhaustion.
+  - Stack Overflow is a function that is repeatedly called recursively and never reaches a base case to stop the recursive call. This will result in too many function calls on the stack, resulting in memory exhaustion.
 
 - Describe direct and indirect recursion
   - Direct recursion is when a function calls itself.
@@ -116,7 +116,7 @@
 
 
 - Why is memoization helpful?
-  -Memoization is helpful because it avoids the running of duplicated code by storing the values of previously run code, to be used again in the same function.
+  - Memoization is helpful because it avoids the running of duplicated code by storing the values of previously run code, to be used again in the same function.
 
 
 -  What is an optimal substructure? When might a problem have one?

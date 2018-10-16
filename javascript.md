@@ -86,6 +86,7 @@ parseInt("123.8") = 123 (Rounds down)
 - What's the event loop? How does it work?
   - The event loop is a queue of callback functions. When an asynchronous function executes, the callback function is pushed into the queue. Once the code after an asynchronous function has executed (the call stack has cleared), the callback functions in the event loop gets processed.
 
+
 - In which phase does hoisting occur?
   - Hoisting occurs during the compilation phase when function declarations are 'moved' to the top of the scope.
 
@@ -122,3 +123,18 @@ parseInt("123.8") = 123 (Rounds down)
   - ES6 uses lexical 'this' via fat arrow function, which forces 'this' to always point to the object where it is physically located within. In ES5, 'this' refers to the window if it isn't binded to the object.
   - ES6 has 'Rest' parameters (...args), where the parameters is an array, so we can use all the Array functions. In ES5, 'arguments' acts like an array but the Array functions (sort, slice) are not available.
   - Strict Mode ('use strict') is optional in ES5, but required in many ES6 features. This helps to explicitly show what the errors are.
+
+
+- What are the steps of a try..catch block in Javascript?
+  1. The code in try {...} is executed.
+  2. If no errors in 'try', then catch(err) does not get executed, and the rest of the code in 'try' runs, jumping over the 'catch' block.
+  3. If there is an error, then the 'catch' block gets executed (error handling), skipping over the rest of the 'try' block.
+  4. The rest of the code gets executed (after 'try' and 'catch').
+
+
+- What type of errors do try..catch blocks work for?
+  - try...catch errors only work for runtime errors (valid JavaScript).
+
+
+- When creating a custom error, what attributes should it have?
+  - A custom error should have the attributes of 'message', 'name' and 'stack'.
