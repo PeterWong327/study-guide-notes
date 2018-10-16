@@ -121,3 +121,29 @@
 
 -  What is an optimal substructure? When might a problem have one?
   - An optimal substructure is when a problem has an optimal solution that can be obtained by using optimal solutions of its subproblems. A problem has an optimal substructure when it has subproblems that can be solved and the results can be used to solve the original problem.
+
+
+In a Binary Heap with N elements, the **height** will not be taller than O(log N):
+  - The size N of a full binary tree of height 'h' is always N = (2^(h+1)) - 1, so:
+   **h = log2(N+1)-1 ~= log2 N**.
+
+**ExtractMax()** in a Binary Heap reports and deletes the maximum element(the root) and then replaces it with the last index N. This last index N is then compared and swapped with its child (larger of the 2) until Binary Max Heap property is not violated (ShiftDown or BubbleDown or Heapify).
+
+
+-  What are the constraints of (any type of) Heap?
+  - (Shape) A binary tree must be **complete** to be a heap. Every single level of the tree must be completely filled, except the last level. The last level must have the left-most nodes filled first. To add an element to a heap, it must be added to the lowest level and too the left-most available position.
+  - (Order) In a **max heap**, the parent node is always greater than its children nodes. In a **min heap**, the parent node is always less than its children nodes.
+
+
+- What type of Data Structure might we use to implement a heap?
+  - We use an array to implement a heap because it is an efficient way of representing a priority queue.
+
+
+- What is the formula for getting the left child of a Heap root node? Right child?
+  - "i" is the root node's index.
+  - Left child of a Heap root node: (2i + 1)
+  - Right child of Heap root node: (2i + 2)
+
+
+-  What is a Priority Queue?
+  - A priority queue is a data structure (FIFO) where every element has a priority associated it. An element with a high priority is dequeued before an element of a lower priority. Two elements with the same priority are then dequeued based on the order of the elements in the queue.
