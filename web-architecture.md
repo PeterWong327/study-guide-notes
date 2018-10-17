@@ -118,3 +118,4 @@
 - What is an XMLHttpRequest?
   - An XMLHttpRequest is an object used to exchange data with a server behind the scenes. This makes it possible to update parts of a web page without needing to reload the entire page.
   (Ex. var xhttp = new XMLHttpRequest() ).
+  - AJAX (Asynchronous JavaScript And XML) uses the XMLHttpRequest object to communicate with servers (JSON, XML, HTML, and text files).
