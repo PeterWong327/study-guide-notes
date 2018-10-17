@@ -147,3 +147,16 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 -  What is a Priority Queue?
   - A priority queue is a data structure (FIFO) where every element has a priority associated it. An element with a high priority is dequeued before an element of a lower priority. Two elements with the same priority are then dequeued based on the order of the elements in the queue.
+
+
+- What is the time-complexity of Heap Sort?
+  - The time-complexity of Heap sort is **O(n*log(n))**, where O(n) is from the heapify phase, when the given array is put into a heap order. The O(n*log(n)) is from the 'sortdown' phase, where the max/min is repeatedly extracted and the heap order is restored (traversing through the height of the heap).
+
+
+-  What are the steps for Heap Sort?
+  1. Build a max heap from an unsorted array (use a function buildMaxHeap).
+  2. Swap the item at the root node (largest value) with the item at the end of the heap.
+  3. Extract the largest value (at the end of the heap) to remove the last node.
+  4. Perform 'heapify', moving the new root node item down to its correct position, by swapping the root node with the larger of its 2 children, until it is no longer smaller than its children.
+  5. The new root node is now the largest, and so we will need to extract this next largest value by swapping it with the item at the end of the heap.
+  6. Repeat steps 2-5 until the heap only has 1 node left. The last node remaining is the first element in the sorted array.
