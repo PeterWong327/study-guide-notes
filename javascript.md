@@ -147,3 +147,8 @@ parseInt("123.8") = 123 (Rounds down)
 
 - When creating a custom error, what attributes should it have?
   - A custom error should have the attributes of 'message', 'name' and 'stack'.
+
+
+- What's the difference between the DOMContentLoaded and load event triggers?
+  - A load event is triggered when a resource and all its dependent resources (images, styles, etc) have finished loading.
+  - DOMContentLoaded is triggered when the initial HTML document has been completely loaded, without waiting for stylesheets, images and subframes to finish loading. 'load' should be used only to detect a fully-loaded page.
