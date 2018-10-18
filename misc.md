@@ -94,7 +94,8 @@ What is mobile-first design? Be as specific as possible.
 
 
 - Explain Context in React
-
+  - Context in React is used when some data needs to be accessible by many components at different nesting levels. It is designed to share data that can be considered "global" for a tree of React components (eg. current authenticated user, theme, or preferred language). Using Context, these values can be shared between components without the need to explicitly pass a prop through every level of the tree.
 
 
 - What does the <Provider> component do?
+  - The <Provider> component is used to pass the store down to the context so that the container components can read the store from the context and subscribe to changes.
