@@ -91,3 +91,10 @@ What is mobile-first design? Be as specific as possible.
 
 - What are presentational components?
   - Presentational components are components that do not specify any behaviors. They are only concerned with how things render or look.
+
+
+- Explain Context in React
+
+
+
+- What does the <Provider> component do?

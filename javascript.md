@@ -152,3 +152,9 @@ parseInt("123.8") = 123 (Rounds down)
 - What's the difference between the DOMContentLoaded and load event triggers?
   - A load event is triggered when a resource and all its dependent resources (images, styles, etc) have finished loading.
   - DOMContentLoaded is triggered when the initial HTML document has been completely loaded, without waiting for stylesheets, images and subframes to finish loading. 'load' should be used only to detect a fully-loaded page.
+
+
+- Discuss the differences between let, const, and var. What are their respective scopings?
+  - With 'var', variables and functions declared inside another function cannot be accessed outside of the function (function-scoped). Variables declared inside a block-scope ('if' and 'for') can be accessed from outside of the block (curly braces).
+  - With 'let' and 'const', they are not hoisted (can't call variable before declaring it) and block-scoped alternatives for variable declaration (re-declaring a variable inside a block will only change the variable within the same block).
+  - 'const' cannot be reassigned, but its properties can be changed (variable cannot be re-declared, but for example, the index of an array can be changed, or the key/value of an object can be changed). 
