@@ -174,3 +174,4 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 
 - What is the runtime of merge sort?
+  - The runtime of merge sort is O(n*logn), linearithmic, where the merge function = n, and each recursive call on the subarrays = log n.
