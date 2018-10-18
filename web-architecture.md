@@ -119,3 +119,15 @@
   - An XMLHttpRequest is an object used to exchange data with a server behind the scenes. This makes it possible to update parts of a web page without needing to reload the entire page.
   (Ex. var xhttp = new XMLHttpRequest() ).
   - AJAX (Asynchronous JavaScript And XML) uses the XMLHttpRequest object to communicate with servers (JSON, XML, HTML, and text files).
+
+
+-  When are two pages considered to have the same origin?
+  - Two pages are considered to have the same origin if the protocol, port, and host are the same for both pages ("**scheme/host/port** tuple")
+
+
+- How might you allow cross-origin resource sharing?
+  - Cross-origin resource sharing can be allowed through the CORS protocol, which consists of a set of headers that indicates whether a response can be shared cross-origin.
+
+
+- What is CORS?
+  - Cross-Origin Resource Sharing is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin have permission to access resources from a server at a different origin (domain).
