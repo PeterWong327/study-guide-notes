@@ -160,3 +160,17 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
   4. Perform 'heapify', moving the new root node item down to its correct position, by swapping the root node with the larger of its 2 children, until it is no longer smaller than its children.
   5. The new root node is now the largest, and so we will need to extract this next largest value by swapping it with the item at the end of the heap.
   6. Repeat steps 2-5 until the heap only has 1 node left. The last node remaining is the first element in the sorted array.
+
+
+- Explain the pseudocode for Merge Sort
+  1. Establish the base case (return the given array if the size of the array is less than or equal to 1).
+  2. Define the midpoint as the array length / 2.
+  3. Call mergeSort on the left half of the array.
+  4. Call mergeSort on the right half of the array.
+  5. Call and return the helper function 'merge' on the result of mergeSort of left and right half of the array.
+  6. Define the helper function 'merge' by passing in a leftArray and rightArray.
+  7. While both subarrays are not empty, compare the first element of each subarray, and push the smaller element into a result array (shifting the element from the subarray).
+  8. Return the result array.concat(left, right).
+
+
+- What is the runtime of merge sort?
