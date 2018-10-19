@@ -131,3 +131,8 @@
 
 - What is CORS?
   - Cross-Origin Resource Sharing is a mechanism that uses additional HTTP headers to tell a browser to let a web application running at one origin have permission to access resources from a server at a different origin (domain).
+
+
+-  What are the advantages and disadvantages of NoSQL databases vs. SQL databases?
+  - A SQL database (Relational Databases, or RDBMS) ensures that only one change can be written to a data field at a time, so no conflicting transactions can be made (ex. ATM). It uses database locks to ensure consistency no matter which database server the data comes from. However, this can be a disadvantage when lots of requests for the same data occurs (web-scale attacks), slowing down a server. 
+  - A NoSQL database can handle "big data" tasks, but it cannot handle complex tasks.
