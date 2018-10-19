@@ -99,3 +99,14 @@ What is mobile-first design? Be as specific as possible.
 
 - What does the <Provider> component do?
   - The <Provider> component is used to pass the store down to the context so that the container components can read the store from the context and subscribe to changes.
+
+
+- In which order does SQL execute its queries? Make sure to mention SELECT, JOIN, WHERE, and aggregate functions such as GROUP BY.
+  1. FROM/JOINs
+  2. WHERE
+  3. GROUP BY
+  4. HAVING
+  5. SELECT
+  6. DISTINCT
+  7. ORDER BY
+  8. LIMIT/OFFSET
