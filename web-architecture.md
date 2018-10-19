@@ -134,5 +134,5 @@
 
 
 -  What are the advantages and disadvantages of NoSQL databases vs. SQL databases?
-  - A SQL database (Relational Databases, or RDBMS) ensures that only one change can be written to a data field at a time, so no conflicting transactions can be made (ex. ATM). It uses database locks to ensure consistency no matter which database server the data comes from. However, this can be a disadvantage when lots of requests for the same data occurs (web-scale attacks), slowing down a server. 
-  - A NoSQL database can handle "big data" tasks, but it cannot handle complex tasks.
+  - A SQL database (Relational Databases, or RDBMS, eg. MySQL) ensures that only one change can be written to a data field at a time, so no conflicting transactions can be made (ex. ATM). It uses database locks to ensure consistency no matter which database server the data comes from. However, this can be a disadvantage when lots of requests for the same data occurs (web-scale attacks), slowing down a server. SQL databases are vertically scalable, meaning that they can handle an increase in data by increasing memory on a single server.
+  - A NoSQL database (eg. MongoDB) can handle "big data" tasks, but it does not have a standard interface to handle complex tasks. NoSQL databases fit better for hierarchical data storage as they can store data in a key-value pair. NoSQL databases are horizontally scalable, meaning that an increase in traffic can be resolved by adding more servers to handle the load.
