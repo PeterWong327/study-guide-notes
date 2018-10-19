@@ -157,4 +157,16 @@ parseInt("123.8") = 123 (Rounds down)
 - Discuss the differences between let, const, and var. What are their respective scopings?
   - With 'var', variables and functions declared inside another function cannot be accessed outside of the function (function-scoped). Variables declared inside a block-scope ('if' and 'for') can be accessed from outside of the block (curly braces).
   - With 'let' and 'const', they are not hoisted (can't call variable before declaring it) and block-scoped alternatives for variable declaration (re-declaring a variable inside a block will only change the variable within the same block).
-  - 'const' cannot be reassigned, but its properties can be changed (variable cannot be re-declared, but for example, the index of an array can be changed, or the key/value of an object can be changed). 
+  - 'const' cannot be reassigned, but its properties can be changed (variable cannot be re-declared, but for example, the index of an array can be changed, or the key/value of an object can be changed).
+
+
+-  What happens when you enable strict mode in javascript?
+  When 'strict mode' is enabled in the global scope, one thing that you cannot do is use undeclared variables/functions **(x = 3.14 throws an error)**. If an undeclared variable/function is used outside of the scope where 'use strict' was declared, then there would be no error. Strict mode helps throw an error when a variable has been mistyped, preventing a new global variable from being created. Strict mode also prevents a variable/function from being deleted. Other actions prevented by strict mode:
+    - using a duplicate parameter name.
+    - putting a '0' in front of a number.
+    - using "eval" or "arguments" as variables.
+
+
+- How does the rest/spread operator work in JS?
+  - The rest parameter is used in a function definition with three dots (...args), to gather all parameters into an array. When a function is called, any excess arguments would be put into the args array through the rest operator. The rest parameter must be at the end of a function.
+  - The spread operator is used to represent all the elements of an array (used in a function call), and expands the array into a list of many arguments.
