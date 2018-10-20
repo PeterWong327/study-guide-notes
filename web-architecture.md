@@ -148,4 +148,4 @@
 
 
 - What is the difference between an Inner Join and a Left Join?
-  - An inner join only selects data from both tables that satisfy the join condition. A Left join selects all data from the left table and any data from the right table that satisfy the join condition.
+  - An inner join only selects data from both tables that satisfy the join condition. A Left join selects all data from the left table and any data from the right table that satisfy the join condition. Result of the Left join might return Null values where the right table does not have the data to correspond to the data from the left table.
