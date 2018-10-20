@@ -136,3 +136,11 @@
 -  What are the advantages and disadvantages of NoSQL databases vs. SQL databases?
   - A SQL (Structured Query Languge) database (Relational Databases, or RDBMS, eg. MySQL) ensures that only one change can be written to a data field at a time, so no conflicting transactions can be made (ex. ATM). It uses database locks to ensure consistency no matter which database server the data comes from. However, this can be a disadvantage when lots of requests for the same data occurs (web-scale attacks), slowing down a server. SQL databases are vertically scalable, meaning that they can handle an increase in data by increasing memory on a single server.
   - A NoSQL database (eg. MongoDB) can handle "big data" tasks, but it does not have a standard interface to handle complex tasks. NoSQL databases fit better for hierarchical data storage as they can store data in a key-value pair. NoSQL databases are horizontally scalable, meaning that an increase in traffic can be resolved by adding more servers to handle the load.
+
+
+- What problem does bind solve in Javascript? How does it accomplish this?
+  - 'bind' solves the problem of 'this' being lost when a method is passed somewhere separately from the object where 'this' is referring to. This is done by calling bind on a function, passing in the object to be bound to 'this' (let sayHi = user.sayHi.bind(user)).
+
+
+- What is the syntax for passing arguments to the bind function?
+  - The syntax for passing arguments to the bind function is: **let boundFunction = function.bind(argument, optionalArgs)** The argument is given the 'this' context, and any optionalArgs are prepended to the boundFunction when it gets called.
