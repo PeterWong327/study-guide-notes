@@ -138,9 +138,14 @@
   - A NoSQL database (eg. MongoDB) can handle "big data" tasks, but it does not have a standard interface to handle complex tasks. NoSQL databases fit better for hierarchical data storage as they can store data in a key-value pair. NoSQL databases are horizontally scalable, meaning that an increase in traffic can be resolved by adding more servers to handle the load.
 
 
-- What problem does bind solve in Javascript? How does it accomplish this?
-  - 'bind' solves the problem of 'this' being lost when a method is passed somewhere separately from the object where 'this' is referring to. This is done by calling bind on a function, passing in the object to be bound to 'this' (let sayHi = user.sayHi.bind(user)).
+- What are the different types of SQL Joins?
+  - The 4 different types of SQL joins are:
+    - Inner (all data from both where join condition met)
+    - Left (all data from left + data from right where condition met)
+    - Right (all data from right table + data from left where condition met)
+    - Full (all data from both regardless of condition).
 
 
-- What is the syntax for passing arguments to the bind function?
-  - The syntax for passing arguments to the bind function is: **let boundFunction = function.bind(argument, optionalArgs)** The argument is given the 'this' context, and any optionalArgs are prepended to the boundFunction when it gets called.
+
+- What is the difference between an Inner Join and a Left Join?
+  - An inner join only selects data from both tables that satisfy the join condition. A Left join selects all data from the left table and any data from the right table that satisfy the join condition.

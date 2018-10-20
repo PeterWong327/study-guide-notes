@@ -110,3 +110,11 @@ What is mobile-first design? Be as specific as possible.
   6. DISTINCT
   7. ORDER BY
   8. LIMIT/OFFSET
+
+
+  - What problem does bind solve in Javascript? How does it accomplish this?
+    - 'bind' solves the problem of 'this' being lost when a method is passed somewhere separately from the object where 'this' is referring to. This is done by calling bind on a function, passing in the object to be bound to 'this' (let sayHi = user.sayHi.bind(user)).
+
+
+  - What is the syntax for passing arguments to the bind function?
+    - The syntax for passing arguments to the bind function is: **let boundFunction = function.bind(argument, optionalArgs)** The argument is given the 'this' context, and any optionalArgs are prepended to the boundFunction when it gets called.
