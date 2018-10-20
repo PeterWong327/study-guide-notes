@@ -202,3 +202,20 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 - Describe when it may be ideal to utilize Bubble Sort.
   - It may be ideal to utilize Bubble Sort when tasked with a problem to find the k largest or smallest elements in an array. Since Bubble Sort sorts the last k elements in order first (the elements 'bubble' to the top), the iteration step in Bubble Sort only needs to be run k times until we can get all the elements we need (by printing the last k elements). This results in a time complexity of O(nk).
+
+
+- What is the time complexity of Radix Sort? What are the steps for this algorithm?
+  - The time complexity of Radix Sort is O((n+b) * log(k)), where k is the maximum possible value.
+
+  1. Find the biggest number in given array. The number of digits in this number is N. Add leading zeros to all other numbers until they all have N digits.
+  2. Perform N times using 1st digit from right of each number:
+    a. Create a 'bucket' array from index 0 to 9.
+    b. Iterate through given array and place each number into corresponding 'bucket' where the bucket index = the 'current' digit of each number.
+    c. Iterate through each bucket from 0 - 9, and place each number into the a array.
+    d. Repeat Steps b and c with the results array until all digits have been accounted for.
+    e. Return results array.
+
+
+
+- What is an ideal use-case for Radix Sort?
+  - The ideal use-case for Radix Sort is when the range of the array of integers is from 1 to n^c, where c is a constant, if the numbers are represented in base n (b === n), then the time complexity is O(n).

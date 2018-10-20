@@ -170,3 +170,7 @@ parseInt("123.8") = 123 (Rounds down)
 - How does the rest/spread operator work in JS?
   - The rest parameter is used in a function definition with three dots (...args), to gather all parameters into an array. When a function is called, any excess arguments would be put into the args array through the rest operator. The rest parameter must be at the end of a function.
   - The spread operator is used to represent all the elements of an array (used in a function call), and expands the array into a list of many arguments.
+
+
+- What does the length attribute refer to on a Function in Javascript?
+  - The length attribute refer to the number of parameters that are in the function, excluding any rest parameters.

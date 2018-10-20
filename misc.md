@@ -118,3 +118,7 @@ What is mobile-first design? Be as specific as possible.
 
   - What is the syntax for passing arguments to the bind function?
     - The syntax for passing arguments to the bind function is: **let boundFunction = function.bind(argument, optionalArgs)** The argument is given the 'this' context, and any optionalArgs are prepended to the boundFunction when it gets called.
+
+
+  - Where in a SQL query may we use a sub query (After which SQL keyword) ?
+    - A sub query can be used in the FROM statement. The sub query will run first (must be able to produce a result on its own), then use the result in the main SQL query. It can also be used in the WHERE, JOIN / ON, or CASE statements, where conditional logic is used (no need for alias).
