@@ -53,6 +53,7 @@
   4. Repeat step 2 for another vertex until all vertices have been visited.
   5. Pop off each vertex from the stack into a an array, which is sorted.
 
+
  - Give an example of a use-case for Topological Sort
   - Topological Sort can be used to order the packages of a build system. The child node of a vertex would have a dependency on its parent node, so a parent node is always ordered before a child node in a topological sort.
 
@@ -63,6 +64,7 @@
 
  - On which types of Graphs can we do a topological sort?
     - On directed acyclic graphs(DAG).
+
 
 - What data structure do we use to assist with the topological sort algorithm?
     - Stacks and sets. A set would be used to store all the visited vertices, while a stack has all the vertices in topological sorted order (pushed from the set when it has no more adjacent vertices).
@@ -84,6 +86,7 @@
 
     e. Repeat until all neighbors have been explored, and then repeat step A.
 
+
 - What is the time complexity of Djikstra's algorithm?
   O(E*log(V)), where E is the # of edges and V is the # of vertices.
 
@@ -91,8 +94,10 @@
 -  What is a base case in recursion? Why do we need one? Do we always need one?
   - A base case is a condition that stops a function from calling itself recursively in an infinite loop. We need the base case to prevent Stack Overflow.
 
+
 - What exactly is a Stack Overflow?
   - Stack Overflow is a function that is repeatedly called recursively and never reaches a base case to stop the recursive call. This will result in too many function calls on the stack, resulting in memory exhaustion.
+
 
 - Describe direct and indirect recursion
   - Direct recursion is when a function calls itself.
@@ -102,9 +107,11 @@
 - What is tail call recursion? Why is it helpful, if at all?
   - Tail call recursion is when a function ends with a recursive call, so that the last thing executed is the recursive call. It is helpful because the function can be optimized by the compiler. Since the recursive call is the last to be executed, there would be no need to save the current function's stack frame, thus saving memory.
 
+
 - Discuss advantages/disadvantages of recursion
   - The advantages of recursion include being able to easily solve a complex problem using a recursive function, resulting in clean and simple code.
   - The disadvantages include the possibility of stack overflow if the function is not set up properly, and the function can become memory intensive as as the stack frame increases. Also, recursion has greater time requirements because of additional function calls.
+
 
 - How is memory allocated during recursive function calls?
   - During a recursive call, memory is allocated on the stack to the main function making the recursive call. As another recursive call occurs, memory is allocated on top of the memory allocated to calling the function. Once a base case is reached, the function return its value to the function which called it, de-allocating the memory until the stack is cleared.
@@ -182,5 +189,16 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
   2. Iterate through given array and increment the count at the corresponding index of the counts array (the index represents the integer).
   3. Once counts are in place, modify the counts array by adding the count from the previous index to the count of the current index.
   4. Create a new array with the same length as the given array ("sorted").
-  5. Place each integer of the given array into the correct position in the 'sorted' array, using the counts array to find the position (key into counts array with integer as the index, then use the element as the index (i + 1) for the integer in the sorted array). Subtract 1 from the counts array element that was used for the position. 
+  5. Place each integer of the given array into the correct position in the 'sorted' array, using the counts array to find the position (key into counts array with integer as the index, then use the element as the index (i + 1) for the integer in the sorted array). Subtract 1 from the counts array element that was used for the position.
   - The time complexity of Counting Sort is O(n + k), where n is the number of elements in the given array, and k is the range of the input from the given array.
+
+
+- What is the time complexity of Bubble Sort? What are the steps for this algorithm?
+  - The time complexity for Bubble Sort is O(n) for the best case, while O(n^2) for the average and worst case.
+  1. Iterate through each number in the given array.
+  2. If current number is greater than the next number, swap the positions of the two numbers.
+  3. After you reach the 2nd to last number, if the array is not sorted yet, start at the first number again (use while loop) and repeat the swapping of numbers until the array is sorted.
+
+
+- Describe when it may be ideal to utilize Bubble Sort.
+  - It may be ideal to utilize Bubble Sort when tasked with a problem to find the k largest or smallest elements in an array. Since Bubble Sort sorts the last k elements in order first (the elements 'bubble' to the top), the iteration step in Bubble Sort only needs to be run k times until we can get all the elements we need (by printing the last k elements). This results in a time complexity of O(nk).

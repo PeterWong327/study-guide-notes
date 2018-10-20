@@ -146,6 +146,13 @@
     - Full (all data from both regardless of condition).
 
 
-
 - What is the difference between an Inner Join and a Left Join?
   - An inner join only selects data from both tables that satisfy the join condition. A Left join selects all data from the left table and any data from the right table that satisfy the join condition. Result of the Left join might return Null values where the right table does not have the data to correspond to the data from the left table.
+
+
+- What are the issues one may face when scaling horizontally?
+  - Some of the issues for scaling horizontally include the additional operations cost of powering and cooling the physical increase of hardware, the licensing costs, and the extra space they will occupy.
+
+
+- What is Vertical Scaling?
+  - Vertical Scaling is when you increase the capacity of a machine by adding more resources such as memory or a CPU to the machine. This is done when a system is getting slow based on an increased number of requests. Vertical scaling requires that the system go down during the process of scaling up.
