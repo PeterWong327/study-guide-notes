@@ -175,3 +175,12 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 - What is the runtime of merge sort?
   - The runtime of merge sort is O(n*logn), linearithmic, where the merge function = n, and each recursive call on the subarrays = log n.
+
+
+- What are the steps for Counting Sort? What is the time complexity?
+  1. Given an unsorted array of integers, create a counts array of 0s with the length of the range (eg. 0 to 9 => an array with index 0 to 9, length 10) for each integer.
+  2. Iterate through given array and increment the count at the corresponding index of the counts array (the index represents the integer).
+  3. Once counts are in place, modify the counts array by adding the count from the previous index to the count of the current index.
+  4. Create a new array with the same length as the given array ("sorted").
+  5. Place each integer of the given array into the correct position in the 'sorted' array, using the counts array to find the position (key into counts array with integer as the index, then use the element as the index (i + 1) for the integer in the sorted array). Subtract 1 from the counts array element that was used for the position. 
+  - The time complexity of Counting Sort is O(n + k), where n is the number of elements in the given array, and k is the range of the input from the given array.
