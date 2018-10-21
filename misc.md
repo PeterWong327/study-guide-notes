@@ -122,3 +122,8 @@ What is mobile-first design? Be as specific as possible.
 
   - Where in a SQL query may we use a sub query (After which SQL keyword) ?
     - A sub query can be used in the FROM statement. The sub query will run first (must be able to produce a result on its own), then use the result in the main SQL query. It can also be used in the WHERE, JOIN / ON, or CASE statements, where conditional logic is used (no need for alias).
+
+
+-  Describe the effects of using Group By and Having.
+  - 'GROUP BY' will show only the data subsets that are specified in this condition, which is also specified in the SELECT statement, and groups the results by one or more columns.
+  'HAVING' is basically the same function as 'WHERE', except it is used after 'GROUP BY'. Subsets resulting from the 'GROUP BY' that do not satisfy the 'HAVING' condition will be eliminated from the result. 'HAVING' acts as a secondary filter once subsets are grouped into a table.

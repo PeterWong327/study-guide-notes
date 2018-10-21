@@ -156,3 +156,15 @@
 
 - What is Vertical Scaling?
   - Vertical Scaling is when you increase the capacity of a machine by adding more resources such as memory or a CPU to the machine. This is done when a system is getting slow based on an increased number of requests. Vertical scaling requires that the system go down during the process of scaling up.
+
+
+-  What is a Load Balancer?
+  - A Load Balancer controls the traffic coming from the client side to the backend server side by distributing or balancing the requests. A Load Balancer can have an IP address that acts as a private IP address for the backend servers. This gets sent back to the client in place of the server IP addresses. The Load Balancer optimizes performance by routing traffic to the least busy server.
+
+
+-  What are some examples of Horizontal Scaling?
+  - An example of Horizontal Scaling is increasing the number of hardware servers because of an increase in network demand from the servers. Having more servers also provides redundant data storage, which would decrease the chance that a system failure would cause the network to go down.
+
+
+- What is Moore's Law?
+  - Moore's Law states that processor speeds will double every two years.

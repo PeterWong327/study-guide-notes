@@ -174,3 +174,8 @@ parseInt("123.8") = 123 (Rounds down)
 
 - What does the length attribute refer to on a Function in Javascript?
   - The length attribute refer to the number of parameters that are in the function, excluding any rest parameters.
+
+
+- Explain the differences between a Function Expression and Function Declaration.
+  - Function Expression is when a function is created and saved to a variable. The function is only usable from then on, meaning that it is not hoisted.
+  - A Function Declaration is when a function is declared, and it can be called before and after it was defined, meaning that it is hoisted.
