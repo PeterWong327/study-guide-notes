@@ -168,3 +168,18 @@
 
 - What is Moore's Law?
   - Moore's Law states that processor speeds will double every two years.
+
+
+- What is Round Robin DNS binding?
+  - If multiple IP addresses are used for hosting, Round Robin cycles through a different IP address for each request that comes in, so that one server does not get overloaded with requests.
+
+
+- What issue arises regarding sessions when implementing a Load Balancer?
+  - Sessions are saved in distinct servers (as text files), so if a user goes through a different server per Round Robin, the user credentials/info (cookies) would not be saved in another server. This can also pose an issue with a shopping cart where an item exists in one server but not another server.
+
+
+- What is striping when talking about writing to a Hard drive?
+
+
+
+- What is RAID and what functionality can it give you?
