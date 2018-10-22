@@ -211,7 +211,7 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
   2. Perform N times using 1st digit from right of each number:
     a. Create a 'bucket' array from index 0 to 9.
     b. Iterate through given array and place each number into corresponding 'bucket' where the bucket index = the 'current' digit of each number.
-    c. Iterate through each bucket from 0 - 9, and place each number into the a array.
+    c. Iterate through each bucket from 0 - 9, and place each number into the array.
     d. Repeat Steps b and c with the results array until all digits have been accounted for.
     e. Return results array.
 
@@ -219,3 +219,11 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 - What is an ideal use-case for Radix Sort?
   - The ideal use-case for Radix Sort is when the range of the array of integers is from 1 to n^c, where c is a constant, if the numbers are represented in base n (b === n), then the time complexity is O(n).
+
+
+-  What are the constraints of a Binary Search Tree?
+  - The constraints of a Binary Search Tree is that if the tree is not balanced, then the height h can be at worse equal to n (number of elements), and then the lookup time would be O(n). If the tree is balanced, then the lookup time would be O(log n).
+
+
+- What is the big O lookup time for a value in a binary search tree?
+  - The time complexity of looking up a value is O(h), where h is the height of the binary search tree.
