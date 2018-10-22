@@ -127,3 +127,11 @@ What is mobile-first design? Be as specific as possible.
 -  Describe the effects of using Group By and Having.
   - 'GROUP BY' will show only the data subsets that are specified in this condition, which is also specified in the SELECT statement, and groups the results by one or more columns.
   'HAVING' is basically the same function as 'WHERE', except it is used after 'GROUP BY'. Subsets resulting from the 'GROUP BY' that do not satisfy the 'HAVING' condition will be eliminated from the result. 'HAVING' acts as a secondary filter once subsets are grouped into a table.
+
+
+- What is a symbol when talking about transmitting data?
+  A symbol is used to represent information, like a number, when transmitting data. The symbols are different states that can be transmitted.
+
+
+- How is information transmitted over wireless signal?
+  - Using radiowaves (wireless router), where the antenna radiate radiowaves at different frequencies, and another antenna would read the frequencies to translate the information (symbols) into data.

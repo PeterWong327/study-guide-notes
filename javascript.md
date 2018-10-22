@@ -191,6 +191,7 @@ parseInt("123.8") = 123 (Rounds down)
       b++;
       console.log(a) => 2
       console.log(b) => 3
+      (a === b) => false
       ```
 
   Reference Ex.
@@ -200,4 +201,5 @@ parseInt("123.8") = 123 (Rounds down)
     d.push(4)
     console.log(c) => [1,2,3,4]
     console.log(d) => [1,2,3,4]
+    (c === d) => true
   ```
