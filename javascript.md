@@ -179,3 +179,25 @@ parseInt("123.8") = 123 (Rounds down)
 - Explain the differences between a Function Expression and Function Declaration.
   - Function Expression is when a function is created and saved to a variable. The function is only usable from then on, meaning that it is not hoisted.
   - A Function Declaration is when a function is declared, and it can be called before and after it was defined, meaning that it is hoisted.
+
+
+- Does JS assign variables by value or by reference?
+  - JavaScript assigns variables by value if the value is a simple value (primitives), such as null, undefined, boolean, number, string, and symbol (ES6). On the other hand, if the value is a compound value (objects, arrays, functions), then the variable is assigned by reference. Compound values are equal by reference, but not value.
+
+  Value Ex.
+  ```
+      let a = 2;
+      let b = a;
+      b++;
+      console.log(a) => 2
+      console.log(b) => 3
+      ```
+
+  Reference Ex.
+  ```
+    let c = [1,2,3];
+    let d = c;
+    d.push(4)
+    console.log(c) => [1,2,3,4]
+    console.log(d) => [1,2,3,4]
+  ```
