@@ -179,7 +179,8 @@
 
 
 - What is striping when talking about writing to a Hard drive?
-
+  - Striping is when data is divided into blocks which get stored in multiple hard drives through a redundant array of independent disks (RAID) group. This allows data to be read and written more quickly.
 
 
 - What is RAID and what functionality can it give you?
+  Redundant Array Independent Disks (RAID) is when data is divided up and stored in two or more hard drives of identical size. This provides a layer of protection against data loss in case one hard drive goes down. RAID comes in different forms (RAID 0, RAID 5, RAID 6, RAID 10, etc). The type used depends on the need for speed, data redundancy, or reliability.
