@@ -203,3 +203,14 @@ parseInt("123.8") = 123 (Rounds down)
     console.log(d) => [1,2,3,4]
     (c === d) => true
   ```
+
+
+
+- What are the 7 different JS types?
+  - The 7 different built-in JavaScript types are: null, undefined, boolean, number, string, object, and symbol (ES6). These are all primitives (except for object).
+
+
+
+- Explain the difference between + and
+  -&ast;/ in JS when it comes to coercion.
+    - In JS, when a string is used with +, the result is a concatenation between the string and a number. (ex. 1 + "2" = "12". If a string is used with -&ast;/ operators, then a numeric operation occurs between the string and the number. The string is coerced to a number in this case (ex. "2" * 3 = 6).

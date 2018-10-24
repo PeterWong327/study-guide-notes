@@ -184,3 +184,16 @@
 
 - What is RAID and what functionality can it give you?
   Redundant Array Independent Disks (RAID) is when data is divided up and stored in two or more hard drives of identical size. This provides a layer of protection against data loss in case one hard drive goes down. RAID comes in different forms (RAID 0, RAID 5, RAID 6, RAID 10, etc). The type used depends on the need for speed, data redundancy, or reliability.
+
+
+-  How can you solve the sticky-session issue without shared file storage on the back-end?
+  - Using technologies such as FC (fiber channel, very fast and expensive, used in offices and data centers), MySQL (separate server to store session objects), NFS (network file system, a protocol to implement information from one server to multiple computers)
+  - Storing a cookie on the user's computer, which contains a random number that correlates to a server (random so it cannot be spoofed by another user) that the user has information stored.
+
+
+- Explain why you might want to compile and store static HTML pages for something like a Craigslist post.
+  - Storing a static HTML page eliminates the need to regenerate the page every time that it is revisited (file-based caching approach). This increases efficiency in loading webpages, but takes up more disk space.
+
+
+- What does using 'memcache' do for you?
+  - It is a software run on your server, a key-value storage mechanism that stores your data in RAM. It can be used by different languages. Using 'memcache' stores your data as a key-value pair in the cache, so that the data can be retrieved quickly by calling for the data with the corresponding key. If storage reaches capacity, garbage collection can be performed on data that has not been accessed for a long time (FIFO, LRU).

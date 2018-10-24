@@ -135,3 +135,22 @@ What is mobile-first design? Be as specific as possible.
 
 - How is information transmitted over wireless signal?
   - Using radiowaves (wireless router), where the antenna radiate radiowaves at different frequencies, and another antenna would read the frequencies to translate the information (symbols) into data.
+
+
+-  How do two computers ensure that the signal that is sent between them is interpreted correctly?
+  - The two computers must ensure that they are using the same clock rate in order for the signals to be interpreted correctly.
+
+
+- What happens when the clocks become unsynchronized?
+  - When the clocks become unsynchronized, clock slips occur, where bits of information either does not get sent/received correctly or extra information get sent between the two computers.
+
+
+- How do computers synchronize their clocks?
+  - Through GPS antenna (signals from GPS satellites have clocks)
+  - Have an atomic clock in the computer (uncommon).
+  - Send a separate signal (clock signal) from one computer to another computer (risk is one link can be slower than the other link, causing a clock delay vs the data being transmitted).
+  - Combine the clock and the data by using different symbols to represent ones (transition from 0 to 5volts) and zeros (transition from 5 to 0 volts).
+
+
+- What is manchester coding?
+  - Combining data and clock into one signal, removing the need to synchronize the clocks between 2 computers. Different symbols are used to represent ones (transition from 0 to 5 volts) and zeros (transition from 5 to 0 volts).
