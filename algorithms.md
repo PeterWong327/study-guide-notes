@@ -222,7 +222,7 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 
 -  What are the constraints of a Binary Search Tree?
-  - The constraints of a Binary Search Tree is that if the tree is not balanced, then the height h can be at worse equal to n (number of elements), and then the lookup time would be O(n). If the tree is balanced, then the lookup time would be O(log n).
+  - All elements in the left subtree must be <= the root node, while all the elements in the right subtree must be >= the root node.
 
 
 - What is the big O lookup time for a value in a binary search tree?
