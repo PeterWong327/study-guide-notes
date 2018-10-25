@@ -214,3 +214,10 @@ parseInt("123.8") = 123 (Rounds down)
 - Explain the difference between + and
   -&ast;/ in JS when it comes to coercion.
     - In JS, when a string is used with +, the result is a concatenation between the string and a number. (ex. 1 + "2" = "12". If a string is used with -&ast;/ operators, then a numeric operation occurs between the string and the number. The string is coerced to a number in this case (ex. "2" * 3 = 6).
+
+
+- How does prototypal inheritance work?
+  - Prototypal inheritance works by having objects inherit directly from other objects when the object is created. There are 3 kinds of prototypal inheritance:
+    1. Prototype delegation: using a delegate prototype (Object.create() ) as a model object for another object.
+    2. Concatenative inheritance: when an object inherits properties from another object by copying the object's prototype properties (Object.assign() ). Does not retain reference.
+    3. Functional inheritance: when an object is created using a factory function, which adds new properties directy to the created object. It returns an object without using the 'new' keyword.
