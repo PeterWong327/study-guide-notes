@@ -154,3 +154,19 @@ What is mobile-first design? Be as specific as possible.
 
 - What is manchester coding?
   - Combining data and clock into one signal, removing the need to synchronize the clocks between 2 computers. Different symbols are used to represent ones (transition from 0 to 5 volts) and zeros (transition from 5 to 0 volts).
+
+
+-  What is framing?
+  - Framing provides the receiver with the starting points of a series of bits so that the receiver knows where the byte boundaries are.
+  - 2 types:
+    1. HDLC (High Level Data Limit Control)
+    2. Ethernet, inner-frame gap (IFG), no bit data for 96 bit times in the beginning. Then sends 56 bits of alternating 1's and 0's (Preamble). Gives the receiver opportunity to synchronize its clocks.
+
+
+- What is a frame delimiter?
+  - It is a bit pattern (flag) used by HDLC to show where the start of a frame is located at.
+  - For Ethernet, it ends the Preamble with "11" to trigger the beginning of the data that comes after.
+
+
+- What is bit stuffing?
+  - 'Bit stuffing' occurs in HDLC when a series of bits are sent that resembles a frame delimiter by chance. It is a rule that when there are 5 consecutive 1 bits in the data being sent, an extra 0 is 'stuffed' after the 5 consecutive 1 bits. When the receiver detects 5 consecutive 1 bits, it expects a 0 to come after, and ignores it. Otherwise, it is either an issue with the data or the sequence would be treated as a flag.
