@@ -233,6 +233,13 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
   - To find the maximum depth of a BST, start at the root node of the tree. Use recursion on the root and 1 (represents the depth with a tree of just the root). Define the base case: if the root is empty, return 0 since there is no depth. Define the terminating case: if a root doesn't have a left or right child, then return the given depth value (num). Use a conditional to return a recursive call on the max value of either the right or left child of the root given the depth plus 1 (if both children exist), or return recursive call on either left or right child (if either one exists) given depth plus 1.
 
 
-
 - How can you determine what the Least common ancestor of two nodes is?
   - Recursively traverse the BST from the root, and the first node who's value is between the two given nodes is the least common ancestor. When traversing the BST, if a node has a value that is greater than both given nodes' values, then the LCA is in the left side of the current node. If the value is less than both given nodes' value, then the LCA is on the right side of the current node.
+
+
+- What is an AVL tree?
+  - An AVL tree is a BST where every node's left and right children's heights differ by at most +/- 1 (balanced).
+
+
+- How does an AVL tree self balance?
+  - An AVL tree self balances by doing left and right rotations when a child subtree is not balanced. If a node x's right child is right-heavy or balanced, then a left rotation is performed on the node x. If a node x's right child is left-heavy, then a double rotation is performed: right rotation on node x's right child, and then a left rotation on node x. This check is done after every insert operation (starting from lowest node violating the AVL property and moving up to the node's grandparent, greatgrandparent, etc.) to maintain the balanced property.
