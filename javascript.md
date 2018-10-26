@@ -10,6 +10,15 @@ parseInt("2112") = 2112
 
 parseInt("123.8") = 123 (Rounds down)
 
+#### Checking if a value is a number
+
+isNaN(value) returns true if the value is not a number.
+Example:
+isNaN("hello") // true
+isNaN(123) // false
+
+
+
 --------------------
 - Give a high level overview of what an object's prototype represents
   - An object's prototype represents the properties of the object which other objects can inherit from.
