@@ -91,11 +91,14 @@ isNaN(123) // false
 - When is the value of this evaluated?
   - The value of **this** is evaluated when the function is called (run-time).
 
+
 - How does use strict affect the value of this?
   - Not using 'use strict' will cause the value of 'this' to be the global object (window in a browser).
 
+
 - Without use strict, what is the value of this inside a named or anonymous function?
   - The value of 'this' without use strict would be the object that the function is called on. If there is no object, then this will be undefined.
+
 
 - What is the value of this in method style syntax?
   - The value of 'this' in method style syntax is the object that calls the method.
@@ -124,6 +127,7 @@ isNaN(123) // false
 - How can you stop event bubbling?
   - You can stop event bubbling by using event.stopPropagation(). This is placed as an onclick on a target element.
 
+
 - What is the difference between event.target and event.currentTarget?
   - event.target is the most deeply nested element that caused the event. It is the target element that initiated the event (the element that was actually clicked)
   - event.currentTarget is the element that has a currently running handler on it. It refers to 'this'.
@@ -131,6 +135,7 @@ isNaN(123) // false
 
 - What does stopImmediatePropagation do?
   - stopImmediatePropagation stops event bubbling AND prevent handlers on the current element from running. No other handlers would execute.
+
 
 - What is event delegation?
   - Event delegation utilizes event bubbling to apply a single handler to multiple elements through the common ancestor (using onclick on the common ancestor).
