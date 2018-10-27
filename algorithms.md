@@ -243,3 +243,7 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 - How does an AVL tree self balance?
   - An AVL tree self balances by doing left and right rotations when a child subtree is not balanced. If a node x's right child is right-heavy or balanced, then a left rotation is performed on the node x. If a node x's right child is left-heavy, then a double rotation is performed: right rotation on node x's right child, and then a left rotation on node x. This check is done after every insert operation (starting from lowest node violating the AVL property and moving up to the node's grandparent, greatgrandparent, etc.) to maintain the balanced property.
+
+
+-  Give a high level overview of how to implement a hash table.
+  - A hash table utilizes a combination of an array and linked lists to store data. When a data is put into a hash function, a non-negative integer is returned. This integer is then used in the hash table as a corresponding array index. The input is then stored in that corresponding array index as the head of a linked list. If an item already exists in that linked list, then the new item becomes the head, shifting every item within the linked list down by one.
