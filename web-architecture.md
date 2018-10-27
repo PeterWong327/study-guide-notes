@@ -197,3 +197,15 @@
 
 - What does using 'memcache' do for you?
   - It is a software run on your server, a key-value storage mechanism that stores your data in RAM. It can be used by different languages. Using 'memcache' stores your data as a key-value pair in the cache, so that the data can be retrieved quickly by calling for the data with the corresponding key. If storage reaches capacity, garbage collection can be performed on data that has not been accessed for a long time (FIFO, LRU).
+
+
+- Why would you want to use an LRU cache in a backend server?
+  - Using an LRU cache in a backend server helps a browser retrieve data faster through storing the data in RAM. Data would be stored based on how recently used it was, so any data that was not accessed for a long time relative to another piece of data would be removed from the cache if capacity is reached.
+
+
+- In the Master-Slave paradigm, what tasks are commonly done by the slave databases and why?
+  - Obtain copy of every row in the master database (identical to master database), so that if the master database dies, the slave databases can act as backups.
+
+
+- In a multi-tiered architecture, how do we get redundancy and responsiveness?
+  ~1:17 - Using a Master-Master server configuration, where the data is replicated from one master to another master server, so the data is redundant and still be responsive if one of the master server goes down. Using 2 load balancers (active-active), either one can receive packets from the outside and relay the information to the back-end servers. If one goes down, then the other load balancer can take on all the traffic.
