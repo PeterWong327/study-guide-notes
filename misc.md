@@ -172,3 +172,15 @@ What is mobile-first design? Be as specific as possible.
 
 - What is bit stuffing?
   - 'Bit stuffing' occurs in HDLC when a series of bits are sent that resembles a frame delimiter by chance. It is a rule that when there are 5 consecutive 1 bits in the data being sent, an extra 0 is 'stuffed' after the 5 consecutive 1 bits. When the receiver detects 5 consecutive 1 bits, it expects a 0 to come after, and ignores it. Otherwise, it is either an issue with the data or the sequence would be treated as a flag.
+
+
+- What is a frame check sequence?
+  - The frame check sequence consists of the last 4 bytes of the Ethernet Frame. It is a number that is computed based the contents of everything else in the Ethernet Frame (Preamble, Destination Address, Source Address, Ethernet Type, Payload). It is used by the sender/receiver to detected corrupted data in the frame.
+
+
+- What is a MAC address?
+  - A MAC (media access control) address is an ethernet address, which is built into ethernet hardware, which means that every computer has a unique MAC address. The MAC address of a computer receiving data is put into the 'Destination Address' of the Ethernet Frame, while the sending computer puts its own MAC address as the 'Source Address'
+
+
+- How do packets get transferred around the internet?
+  - Packets get transferred around the internet through multi-link ethernet networks. An IP router has a destination address that helps it know where to transfer to the next router (forwarding) until the packets reach the target destination. This entire process is called routing.

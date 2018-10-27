@@ -209,3 +209,11 @@
 
 - In a multi-tiered architecture, how do we get redundancy and responsiveness?
   ~1:17 - Using a Master-Master server configuration, where the data is replicated from one master to another master server, so the data is redundant and still be responsive if one of the master server goes down. Using 2 load balancers (active-active), either one can receive packets from the outside and relay the information to the back-end servers. If one goes down, then the other load balancer can take on all the traffic.
+
+
+- What is database partitioning?
+  - Database partitioning is using a separate server to handle data from different categories (schools, network, names, etc.) through horizontal scaling. 
+
+
+- Explain high availability and how it relates to the master-master paradigm.
+  - High availability is a relationship between a pair of or more servers where each server is constantly detecting a signal from the other servers. If one server goes down, then the server would take on the responsibilities of that server. It relates to the master-master paradigm because if a master server goes down, the other master server can take on all the traffic of both servers.
