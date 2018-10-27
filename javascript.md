@@ -18,6 +18,12 @@ isNaN("hello") // true
 isNaN(123) // false
 
 
+#### Use string.charAt(index) to find the character at a particular index
+Example:
+"hello".charAt(1)  // "e"
+"hello".charAt(5) // ""
+
+
 
 --------------------
 - Give a high level overview of what an object's prototype represents
