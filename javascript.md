@@ -241,3 +241,7 @@ Example:
     1. Prototype delegation: using a delegate prototype (Object.create() ) as a model object for another object.
     2. Concatenative inheritance: when an object inherits properties from another object by copying the object's prototype properties (Object.assign() ). Does not retain reference.
     3. Functional inheritance: when an object is created using a factory function, which adds new properties directy to the created object. It returns an object without using the 'new' keyword.
+
+
+  - What's the JS Global Object?
+    - The JS Global Object refers to the "window" or "this" in a browser. It provides access to built-in functions and values (eg. window.alert("Hello" === alert("Hello")) ). It also provides access to global Function Declarations and 'var' variables (it doesn't have access to variable declared with 'let'/'const').
