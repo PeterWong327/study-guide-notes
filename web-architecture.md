@@ -208,12 +208,20 @@
 
 
 - In a multi-tiered architecture, how do we get redundancy and responsiveness?
-  ~1:17 - Using a Master-Master server configuration, where the data is replicated from one master to another master server, so the data is redundant and still be responsive if one of the master server goes down. Using 2 load balancers (active-active), either one can receive packets from the outside and relay the information to the back-end servers. If one goes down, then the other load balancer can take on all the traffic.
+  - Using a Master-Master server configuration, where the data is replicated from one master to another master server, so the data is redundant and still be responsive if one of the master server goes down. Using 2 load balancers (active-active), either one can receive packets from the outside and relay the information to the back-end servers. If one goes down, then the other load balancer can take on all the traffic.
 
 
 - What is database partitioning?
-  - Database partitioning is using a separate server to handle data from different categories (schools, network, names, etc.) through horizontal scaling. 
+  - Database partitioning is using a separate server to handle data from different categories (schools, network, names, etc.) through horizontal scaling.
 
 
 - Explain high availability and how it relates to the master-master paradigm.
   - High availability is a relationship between a pair of or more servers where each server is constantly detecting a signal from the other servers. If one server goes down, then the server would take on the responsibilities of that server. It relates to the master-master paradigm because if a master server goes down, the other master server can take on all the traffic of both servers.
+
+
+-  When does DNS load-balancing become necessary?
+  - DNS load-balancing becomes necessary when you have a different physical location (building) that houses the servers (data centers), so that there is no risk of losing all the data in the servers in a power outage in one particular location. Using DNS load-balancing allows the even distribution of traffic between the data centers.
+
+
+- What is the principle of Least Privilege and how does it relate to the responsibilities of the Load Balancer?
+  - The principle of Least Privilege means that a server only has access to data or another server on a need-by basis. This relates to the responsibilities of the Load Balancer because the Load Balancer helps direct traffic from network requests to the server, so the Load Balancer would only direct requests to the corresponding servers if said server is responsible for a particular request.

@@ -184,3 +184,11 @@ What is mobile-first design? Be as specific as possible.
 
 - How do packets get transferred around the internet?
   - Packets get transferred around the internet through multi-link ethernet networks. An IP router has a destination address that helps it know where to transfer to the next router (forwarding) until the packets reach the target destination. This entire process is called routing.
+
+
+-  What is Address Resolution Protocol?
+  - Address Resolution Protocol is a protocol that sends a broadcast to the ethernet network to find out which router (MAC address) owns a specific IP address.
+
+
+- What is the purpose of TCP?
+  - The purpose of TCP (transmission control protocol) is to provide a Byte Stream Service between a client and a server, which is connection oriented (set-up process) and reliable. TCP controls and manages the data transmission over between networks.
