@@ -49,3 +49,55 @@
 - Path(walk) = a sequence of vertices where each adjacent pair is connected by an edge.
   - simple path = no vertices (and no edges) are repeated.
   - trail = a walk in which no edges are repeated.
+
+
+#### Linked Lists
+
+```
+class Node {
+  constructor(val, nextNode) {
+    this.val = val;
+    this.next = nextNode;
+  }
+}
+
+class LinkedList {
+  constructor(value) {
+    this.head = new Node(value, null);
+    this.add(value);
+    this.delete(value);
+  }
+
+  add(value) {
+    let current = this.head;
+    while (current.next !== null) {
+      current = current.next;
+    }
+    current.next = new Node(value, null);
+  }
+
+  delete(value) {
+    let current.next = this.head;
+    if (current.val = value) {
+      this.head = current.next;
+    } else {
+      while (current.next !== null) && (current.next.val !== value) {
+        current = current.next;
+      }
+      if (current.next !== null) {
+        current.next = current.next.next;
+      }
+    }
+  }
+
+  showList() {
+    let elements = [];
+    let current = this.head;
+    while (current.next !== null) {
+      elements.push(current);
+      current = current.next;
+    }
+    elements.push(current);
+  }
+}
+```

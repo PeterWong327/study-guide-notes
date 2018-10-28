@@ -247,3 +247,10 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 -  Give a high level overview of how to implement a hash table.
   - A hash table utilizes a combination of an array and linked lists to store data. When a data is put into a hash function, a non-negative integer is returned. This integer is then used in the hash table as a corresponding array index. The input is then stored in that corresponding array index as the head of a linked list. If an item already exists in that linked list, then the new item becomes the head, shifting every item within the linked list down by one.
+
+
+- Give a high level overview of how to implement a Linked List.
+  - First, create two classes: one for creating a Node (initialized with a value, and a pointer to the next Node), and one for creating the Linked List (initialized with its head pointing to a new Node given a value).
+  - Then create functions for adding a new Node (given a value), deleting a Node (given a value), and returning a list of all elements in the Linked List (in an array).
+  - To implement the add function, set the current node to the head, and while the next node is not null, keep setting the current to the next node (to get to the last node). Then create a new Node with the given value as the last node.
+  - To implement the delete function, find the node whose next node holds the given value, then change the pointer of the next node to the node after (bypassing the next pointer to the node with the given value).
