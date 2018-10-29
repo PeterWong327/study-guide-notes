@@ -1,4 +1,4 @@
-Choose the correct statement(s) about BSTs
+1. Choose the correct statement(s) about BSTs. A, C, D
 
 A) Pre-order traversal visits all parent nodes before their children
 B) BSTs must be complete in order to be traversed with in-order traversal
@@ -10,7 +10,7 @@ E) Finding the Least Common Ancestor of two nodes has a time complexity of nlog(
 F) Deleting a node in a BST requires having a .parent method on the node
 
 
-Given this code, which statement(s) evaluate(s) to true?
+2. Given this code, which statement(s) evaluate(s) to true? A, C, D, F
   const a = 'string';
   const b = 'string';
   const c = '1';
@@ -37,7 +37,7 @@ F) h === f
 G) h === g
 
 
-Choose the correct statement(s) about Networking and Scalability
+3. Choose the correct statement(s) about Networking and Scalability. A, E, F
 
 A) Manchester coding is a strategy to deal with clock slip
 B) Round Robin DNS binding is handled by the load balancer at the request destination
@@ -48,7 +48,7 @@ F) Sending the actual server id back to the requester in a cookie is not feasibl
 G) Caching compiled assets in memory can't increase server response times because it is expensive to determine which assets need to be cached
 
 
-Choose the correct statement(s) about prototypal inheritance
+4. Choose the correct statement(s) about prototypal inheritance. B
 
 A) An object created with Object.create(a) will share a prototype with a
 B) Object.assign() is used to compose objects with only the features they need
@@ -56,7 +56,7 @@ C) Object.assign takes in an object and an arbitrary number of subsequent object
 D) Calling super() in the constructor lets you choose which properties you want to inherit
 
 
-Given this code, what will be logged?
+5. Given this code, what will be logged? A
 
   let a = {name: "A"};
   let b = Object.create(a);
@@ -111,7 +111,7 @@ false
 undefined
 
 
-Given this code, what will be logged?
+6. Given this code, what will be logged? D
 
   const dFact = function(name) {
     const message = `Hello, ${name}`;
@@ -161,7 +161,7 @@ Hello, Bob
 false
 
 
-Choose the correct statement(s) about AVL trees
+7. Choose the correct statement(s) about AVL trees. C, F
 
 A) AVL trees require completeness at all times
 B) AVL trees cannot delete in log(n) time because they may have to perform tree rotations
@@ -171,7 +171,7 @@ E) As long as the root node is balanced, not every subtree needs to be an AVL tr
 F) AVL trees are incompatible with heapsort
 
 
-Choose the correct statement(s) about the JS global object
+8. Choose the correct statement(s) about the JS global object. B, D
 
 A) Both node.js and browser JS engines share a reference to the same global object
 B) The global object can be used to check whether a function or object is available in the browser API
