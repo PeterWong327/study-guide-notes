@@ -179,7 +179,7 @@ What is mobile-first design? Be as specific as possible.
 
 
 - What is a MAC address?
-  - A MAC (media access control) address is an ethernet address, which is built into ethernet hardware, which means that every computer has a unique MAC address. The MAC address of a computer receiving data is put into the 'Destination Address' of the Ethernet Frame, while the sending computer puts its own MAC address as the 'Source Address'
+  - A MAC (media access control) address is an ethernet address, which is built into ethernet hardware, which means that every computer has a unique MAC address. The MAC address of a computer receiving data is put into the 'Destination Address' of the Ethernet Frame, while the sending computer puts its own MAC address as the 'Source Address'.
 
 
 - How do packets get transferred around the internet?
