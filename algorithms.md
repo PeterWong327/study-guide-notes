@@ -261,4 +261,4 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
 
 
 - If an element is smaller than its right neighbors, explain why there is definitely a peak to the right.
-  -
+  - If an element is smaller than its right neighbors, then either the right neighbor is a peak (right neighbor is higher than everything to its right), or the highest number on the right side is the peak. A peak occurs when both left and right numbers are smaller than the middle number, or when the first/last number is the highest.
