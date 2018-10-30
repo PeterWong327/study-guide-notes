@@ -252,12 +252,13 @@ Example:
 
 
 - What arguments does the Promise object take?
-
+  - The Promise object takes two arguments that are functions (pre-defined): 'resolve' and 'reject'.
 
 
 - What arguments does the resolve function take?
-
+  - The resolve function takes one argument ('value'), which is returned when the resolve function is called after the Promise resolves.
 
 
 - What arguments does .then take?
  explain .then in the context of the callback queue.
+  - '.then' takes in up to 2 functions as arguments: the first function is run when the Promise is resolved and the function receives the result. The second function is run when the Promise is rejected and it receives the error. The functions in '.then' are put into a callback queue and it only runs when all the code on the lines below the '.then' have finished executing.
