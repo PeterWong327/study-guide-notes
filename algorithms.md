@@ -254,3 +254,11 @@ In a Binary Heap with N elements, the **height** will not be taller than O(log N
   - Then create functions for adding a new Node (given a value), deleting a Node (given a value), and returning a list of all elements in the Linked List (in an array).
   - To implement the add function, set the current node to the head, and while the next node is not null, keep setting the current to the next node (to get to the last node). Then create a new Node with the given value as the last node.
   - To implement the delete function, find the node whose next node holds the given value, then change the pointer of the next node to the node after (bypassing the next pointer to the node with the given value).
+
+
+-  Why is binary search logarithmic time?
+  - Binary search is logarithmic time because we assume the given array is sorted, and therefore, we look at only one half of the array at each recursive call, shrinking the number of elements to be checked each time.
+
+
+- If an element is smaller than its right neighbors, explain why there is definitely a peak to the right.
+  -
