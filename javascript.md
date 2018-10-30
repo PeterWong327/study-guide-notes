@@ -245,3 +245,19 @@ Example:
 
   - What's the JS Global Object?
     - The JS Global Object refers to the "window" or "this" in a browser. It provides access to built-in functions and values (eg. window.alert("Hello" === alert("Hello")) ). It also provides access to global Function Declarations and 'var' variables (it doesn't have access to variable declared with 'let'/'const').
+
+
+- What is a Promise?
+  - A Promise is a JavaScript object that links the result of a function to make it available for use in another subscribed function.
+
+
+- What arguments does the Promise object take?
+
+
+
+- What arguments does the resolve function take?
+
+
+
+- What arguments does .then take?
+ explain .then in the context of the callback queue.
