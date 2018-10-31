@@ -192,3 +192,19 @@ What is mobile-first design? Be as specific as possible.
 
 - What is the purpose of TCP?
   - The purpose of TCP (transmission control protocol) is to provide a Byte Stream Service between a client and a server, which is connection oriented (set-up process) and reliable. TCP controls and manages the data transmission over between networks.
+
+
+- Top 10 ways to speed up a website.
+  1. Reduce the number of HTTP requests (images, stylesheets, scripts).
+  2. Minify and combine files like HTML, CSS, and JS files (reduces the size of each file, as well as total number of files). Remove unnecessary formatting, whitespace, and code.
+  3. Use asynchronous loading for CSS and JS files. Synchronous loading will cause scripts to appear one at a time, while asynchronous loading will load the scripts simultaneously.
+  4. Defer JavaScript loading: prevent a file from loading until after other elements have loaded. Deferring a larger file ensures that the rest of the page can load with delay.
+  5. Minimuze the time for the first byte to load (TTFB, Time to first byte), recommended less than 200 ms.
+  6. Reduce server response time: Switch a faster DNS provider for faster lookup time of IP addresses.
+  7. Choose the right hosting option:
+    - Shared hosting (share resources like CPU, disk space, and RAM with other sites on same server)
+    - VPS hosting (share server but have own dedicated portions of resources)
+    - Dedicated server (more space, but have to do own config and setup)
+  8. Run a compression audit: compress images and other files that are over 100kb in size. Use http://www.gidnetwork.com/tools/gzip-test.php to run a compression audit to check if your page is compressed (HTML, CSS, JS, plain text, and XML files).
+  9. Enable compression: use https://www.gnu.org/software/gzip/. Check https://checkgzipcompression.com/ to see if site is compatible.
+  10. Enable browser caching: storing elements in a cache or temporary storage allows for faster load times by not requiring the same elements to be re-loaded.

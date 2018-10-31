@@ -225,3 +225,7 @@
 
 - What is the principle of Least Privilege and how does it relate to the responsibilities of the Load Balancer?
   - The principle of Least Privilege means that a server only has access to data or another server on a need-by basis. This relates to the responsibilities of the Load Balancer because the Load Balancer helps direct traffic from network requests to the server, so the Load Balancer would only direct requests to the corresponding servers if said server is responsible for a particular request.
+
+
+- Why is FTP a bad idea?
+  - FTP (File Transfer Protocol) is a bad idea because it will slow down the response times of your website if your files are too large in size.
