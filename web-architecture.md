@@ -228,4 +228,12 @@
 
 
 - Why is FTP a bad idea?
-  - FTP (File Transfer Protocol) is a bad idea because it will slow down the response times of your website if your files are too large in size.
+  - FTP (File Transfer Protocol) is a bad idea it is completely unencrypted, so sensitive data can be intercepted by anyone who has access to the server that you are using to transfer the data.
+
+
+-  What kinds of information is at risk when communicating over HTTP?
+  - Session information (cookie header), which allows a different user to configure another computer to impersonate the original user's account.
+
+
+-  Why should you ensure that files on a web server are not being executed by root?
+  - You should ensure that files on a web server are not being executed by root because the files should be executed by a specific username, so that other users cannot access the same files. 
