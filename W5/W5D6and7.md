@@ -2,9 +2,10 @@
 
 
 - Explain the partition method
-
+  - 
 
 - What is partial function application?
+  - Partial function application is when a new function is created from an existing function by fixing some parameter from the existing function.
 
 
 - What is the difference between class inheritance and class composition?
@@ -20,6 +21,7 @@
 
 
 - What are class fields and class methods?
+  - Class fields are global variables that live inside a class. Class methods are functions that live inside a class. These do not belong to an instance of the class.
 
 
 - How do static and dynamic languages treat interfaces differently?
