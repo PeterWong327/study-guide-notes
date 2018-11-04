@@ -32,5 +32,5 @@
   - Dynamic languages can invoke methods from an interface on any object, whether that object has the method or not (discovered at runtime). Static languages require that the objet has access to the method before the code would run (prevents runtime errors).
 
 
-- Compare and contrast CSRF and XSS. How do you prevent them? (1:23:10)
-  - CSRF (Cross-Site Request Forgery) is when you log into a domain, then visit an attacker's site, which leads you to performing some action that the attacker set, on your account's behalf. The attacker is able to do this by mimicking the URL of the domain that you are logged into and modifying it to perform a specific action.
+- Compare and contrast CSRF and XSS. How do you prevent them?
+  - CSRF (Cross-Site Request Forgery) is when you log into a domain, then visit an attacker's site, which leads you to performing some action that the attacker set, on your account's behalf. The attacker is able to do this by mimicking the URL of the domain that you are logged into and modifying it to perform a specific action. You can prevent CSRF by using POST for sensitive actions, use CAPTCHAs, or prompting the user to re-login. XSS (Cross-site scripting) occurs when a user clicks on a link or an image tag, activating an injected script set up by the attacker. The script would then run and retrieve sensitive information from the user to the attacker. You can prevent XSS by not clicking on links, not trusting user input, and encode (escape) all user input.
