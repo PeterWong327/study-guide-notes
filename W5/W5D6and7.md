@@ -1,8 +1,12 @@
 - Explain the time complexity of Quicksort
+  - The time complexity of Quicksort depends on the input array and the partition strategy:
+    1. Worst case O(n^2): when the partition step picks the largest or smallest element as the pivot each time and the array is already sorted in ascending or descending order.
+    2. Best and average case O(nLogn): when the partition process picks the middle element as pivot each time.
 
 
 - Explain the partition method
-  - 
+  - In the partition method, the function takes an element as pivot, then places the pivot element at its correct position in a sorted array. Then all smaller elements are placed to the left of the pivot and greater elements are placed to the right of the pivot.
+
 
 - What is partial function application?
   - Partial function application is when a new function is created from an existing function by fixing some parameter from the existing function.
