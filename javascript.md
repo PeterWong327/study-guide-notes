@@ -1,4 +1,4 @@
-# Javascript Notes
+# JavaScript Notes
 
 #### Converting a string to an integer
 
